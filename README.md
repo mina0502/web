@@ -2,4 +2,4 @@
 # [resume_KR](https://mina0502.github.io/web/resume.html)
 # [resume_JP](https://mina0502.github.io/web/resume_jp.html)
 # [portfolio_KR](https://mina0502.github.io/web/portfolio.html)
-# [portfolio_JP](https://mina0502.github.io/web/protfolio_jp.html)
+# [portfolio_JP](https://mina0502.github.io/web/portfolio_jp.html)
