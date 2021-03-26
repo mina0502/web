@@ -2,15 +2,9 @@
 <html>
 <head>
 	<title>portfolio</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 </head>
 <style type="text/css">
-	.th{
-		text-align: center;
-	}
-	table{
-		padding: 0;
-		border-spacing: 0;
-	}
 	p{
 		text-align: left;
 	}
@@ -19,30 +13,28 @@
 		height: 25px;
 		vertical-align: middle;
 	}
+	div{
+		display: none;
+	}
+	button{
+		margin-left: 10px;
+	}
 </style>
-<script type="text/javascript">
-	var tabl="<table border='1>";
-	tabl+="<tr>";
-	tabl+="<div class='th'>";
-	tabl+="<th width='670' height='25' valign='middle'>portfolio</th>";
-	tabl+="</div>";
-	tabl+="</tr>";
-	tabl+="</table>";
-	document.write(tabl);
-</script>
+<script src="VH.js"></script>
 <body>
-	<table border="1">
-		<tr>
-			<td >
+		<div class="jumbotron" style="display: block;" align="center"><h1>PortFolio</h1></div>
+		
+		<button class="btn btn-primary" onclick="func()">Unity</button><br/><br/>
+		<div class="container" id="unity">
 				<p><span><b><mark>[C/C#]&nbsp;Unity를 이용한 게임제작</mark></b></span></p>
 				<ul>
 					<li>Unity에서 필요한 함수 이해(transform함수,GameObject함수,Input함수,delta함수 등)</li>
 				</ul>
 				<p><span><img src="img/Unity.png">&nbsp;&nbsp;<img src="img/Unity_1.png"></span></p>
-			</td>
-		</tr>
-		<tr>
-			<td>
+		</div>
+		
+		<button class="btn btn-primary" onclick="func1()">HTML</button><br/><br/>
+		<div id="html">
 				<p><span><b><mark>[HTML/CSS/JS]</mark></b></span></p>
 				<ol type="I">
 					<li>Chrome기반 HTML코딩</li>
@@ -50,10 +42,10 @@
 					<li>JavaScript 이용</li>
 				</ol>
 				<p><span><img src="img/html.png"></span></p>
-			</td>
-		</tr>
-		<tr>
-			<td>
+		</div>
+
+		<button class="btn btn-primary" onclick="func2()">Flask</button><br/><br/>
+		<div id="flask">
 				<p><span><b><mark>[Python]&nbsp; Flask를 이용한 웹홈페이지 제작</mark></b></span></p>
 				<ul type="square">
 					<li>urlib.request와 BeautifulSoup를 이용한 크롤링</li>
@@ -64,10 +56,10 @@
 					<li>werkzeug.security를 이용한 Hashing 처리</li>
 				</ul>
 				<p><span><iframe width="560" height="315" src="vid/flask_pj.mp4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span></p>
-			</td>
-		</tr>
-		<tr>
-			<td>
+		</div>
+
+		<button class="btn btn-primary" onclick="func3()">iot</button><br/><br/>
+		<div id="iot">
 				<p><span><b><mark>Arduino를 이용한 데이터 시각화</mark></b></span></p>
 				<ul type="circle">
 					<li>온도,습도,조도의 데이터를 실시간 시각화처리</li>
@@ -75,10 +67,10 @@
 					<li>JavaScript, C/C++ 사용</li>
 				</ul>
 				<p><span><img  width="300" height="300"src="https://raw.githubusercontent.com/mina0502/AA08/master/AA08_rpt13/img/AA08_realtime.png"></span></p>
-			</td>
-		</tr>
-		<tr>
-			<td>
+		</div>
+		
+		<button class="btn btn-primary" onclick="func4()">arduino</button><br/><br/>
+		<div id="arduino">
 				<p><span><b><mark>Arduino를 이용한 ECU Controller제작</mark></b></span></p>
 				<ul type="circle">
 					<li>RPM, Voltage,Cooling Water,OliPress 화면구성</li>
@@ -87,10 +79,10 @@
 					<li>J1939 표준규격에 맞춰 제작</li>
 				</ul>
 				<p><span><iframe width="560" height="315" src="vid/ecu_pj.mp4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span></p>
-			</td>
-		</tr>
-		<tr>
-			<td>
+		</div>
+
+		<button class="btn btn-primary" onclick="func5()">jsp</button><br/><br/>
+		<div id="jsp">
 				<p><span><mark>JSP, DB를 이용한 일본드라마 소개 홈페이지 제작</mark></span></p>
 				<ul>
 					<li>MySQL을 사용하여 드라마 검색, 표시, 로그인, 로그아웃, 회원수정, 탈퇴 구현</li>
@@ -100,8 +92,7 @@
 					<li>commons codec 라이브러리를 이용한 AES256형식의 데이터 암/복호화 기능 구현</li>
 				</ul>
 				<p><span><iframe width="560" height="315" src="vid/jsp.mp4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span></p>
-			</td>
-		</tr>
-	</table>
+		</div>
+
 </body>
 </html>
