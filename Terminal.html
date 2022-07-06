@@ -1,0 +1,1690 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>항만물류 시스템 도메인 학습</title>
+</head>
+<style type="text/css">
+	h1{
+		text-align: center;
+	}
+</style>
+<body>
+	<h1>항만의 개요</h1>
+	<br>
+	<hr>
+	<h3>항만의 개념</h3>
+	<ul>
+		<li>육상과 해상활동이 연결되는 지리적 접점</li>
+		<li>자연 지형 또는 인공 구조물로 보호되어 선박이 안전한게 출입하고 정박</li>
+		<li>여객과 화물을 싣고 내릴 수 있는 시설이 구비된 연안의 장소</li>
+	</ul>
+	<b>일반적 개념</b>
+	<p>
+		<ol>
+			<li>선박의 출입이 용이한 곳</li>
+			<li>선박의 안전한 정박을 위한 수심(약 7~10m이상)과 수면이 확보된 곳</li>
+			<li>풍랑의 영향이 비교적 적은 곳</li>
+			<li>육역과 수역이 접속되는 곳</li>
+			<li>해륙교통의 접속점으로 화객의 적양 시설을 구비한 곳</li>
+			<li>물자의 집산이 편리한 곳</li>
+			<li>육상교통의 연계가 편리한 곳</li>
+		</ol>
+	</p>
+	<b>※항만은 해상과 육상의 접속지 역할을 하므로 해륙 양면으로 입지조건이 좋고<br>
+	항만시설 외에도 교통시설, 보관시설, 공장시설, 수륙연락 시설 등을 갖추어야 함※</b>
+	<hr>
+	<h3>항만 입지 조건</h3>
+	 &nbsp; 직접적인 조건 : 바람과 파랑, 조석간만의 차<br>
+	 바람: 항풍・계절풍・태풍 || 항풍이 항구에서 가장 자주 발생하는 바람<br>
+	 파랑: 해수면에서의 대기혼란으로 인한 바람이나 기압변화에 의해 발생 (진동파와 이동파가 있음)<br>
+	 <b>물동량 증가로 인한 화물의 신속한 유통 면이 중요해짐</b><br>
+	 최근 : 사회적 ・ 경제적 조건 및 국가의 장기적인 지역개발 방향 등이 중요시 됨<br>
+
+	 사회적 ・ 경제적 조건 :<ol>
+	 	<li>출입 선박 및 화물의 종류</li>
+	 	<li>배후지의 경제 및 시장 규모 발전 가능한 여부</li>
+	 	<li>도시산업이 발전하고 용수・에너지 등의 확보가 용이한가</li>
+	 	<li>철도 ・ 도로 등의 육상교통수단과 쉽게 연결될 수 있는가</li>
+	 	<li>인접 항만과의 관계에서 선박의 기항이 유리할 것</li>
+	 	<li>도시계획이 용이하고 파랑・조석등에 대비한 방파제 등 외곽시설을 만들기에 양호하며 매립용 토사를 쉽게 조달할 수 있음</li>
+	 </ol>	
+	 <hr>
+	 <h3>근대 항만의 입지</h3>
+	 해륙 양면으로 입지 조건이 좋으며 수심이 깊고 묘박 면적이 충분하고, 지형과 지질이 항만의 형성에 유리한 자연적인 조건보다<br> 항만의 소비지 또는 생산지 등 배후 세력권의 크기 여부가 항만 입지의 중요 요인<br>
+	 지리적 조건, 자연조건, 경제・사회조건을 감안하여야 함
+	<hr>
+	<h1>항만의 기능</h1>
+	<b>해상과 육상 수송의 접점인 터미널 기능과 경제적 기능, 공업생산과 사회적・도시관련 기능, 선박지원 기능으로 구분</b>
+	<ul>
+		<li>터미널 기능: 해륙수송의 전환점으로서, 국내 수송망의 일부분뿐만 아니라<br> 해외수송망과의 연결에 중요한 역할을 이루며, 승객과 물류의 집합과 분산을 매개하는 기능을 가짐<br><b>전 교통체계에 있어 주요한 터미널로서 해륙교통에 관련되는 사람과 화물의 유통 합리화를 이룩하는 역할</b></li>
+		<li>경제적 기능: 국내의 물류와 대외 무역의 확대에 따른 생산과 소비의 공간적 ・ 시간적인 차이를 효과적으로 단축시키며 많은 산업기반 형성을 확대</li>
+		<li>공업생산과 에너지 공급 기능: 수입자원의 수송비용 절감과 안정을 도모<br>석유, 석탄, LPG, LNG 등의 에너지자원의 비축과 공급의 중요한 기능을 가짐</li>
+		<li>사회적 기능: 터미널 활동을 통해 관련하는 산업기반을 강화시키는 역할을 함</li>
+		<li>선박지원 기능: 선박 운항에 필요한 연료, 청수, 선용품 등의 보급기지이며 선박의 수리 및 정비 기지로서 선박에 대한 지원 기능을 가짐</li>
+	</ul>	
+	<hr>
+	<h3>수역 시설</h3>
+		항로: 선박의 입・출항 통로로 이용기 위한 수로<br>
+		박지: 항만내에서 선박이 안전하게 정박할 수 있는 장소로, 검역 대기를 위한 검역묘지, 선석 대기를 위한 일시 정박장소, 해상하역을 위한 정박장소가 있음<br>
+		선류장: 선박이 항만내에서 일시 머무는 장소<br>
+		선회장: 선박이 부두에 접안시 또는 이안 후 항행을 위하여 방향을 바꾸는 장소<br>
+	<h3>외곽시설</h3>
+		<b>방파제</b><br>
+		<table border="1">
+			<tr style="text-align: center;">
+				<th>명칭</th>
+				<th>기능</th>
+			</tr>
+			<tr>
+				<td style="text-align: center;"><b>방파제</b></td>
+				<td>외해의 파랑을 차단하여 항내 정온도를 유지</td>
+			</tr>
+			<tr>
+				<td style="text-align: center;"><b>방사제</b></td>
+				<td>표사가 항내에 침입하여 매립되는 것을 방지</td>
+			</tr>
+			<tr>
+				<td style="text-align: center;"><b>방조제</b></td>
+				<td>조수 간만의 차에 따른 조류의 흐름을 차단</td>
+			</tr>
+			<tr>	
+				<td style="text-align: center;"><b>파제제</b></td>
+				<td>항내의 파랑을 차단</td>
+			</tr>
+			<tr>
+				<td style="text-align: center;"><b>도류제</b></td>
+				<td>하천에서 운반되는 토사가 항내에 퇴적되는 것을 방지</td>
+			</tr>
+		</table>
+		<br>
+		호안 : 홍수・파도・해일 침식으로 무너지지 않게 해안・하천의 지반 표면을 적당한 재료로 덮어서 보호하는 구조물<br>
+
+		<h3>임항교통시설</h3>
+		물동량 처리 능력을 보유하더라도 항만내의 환적화물을 제외하고는 배후지나 내륙지로의 수송이 필요<br>
+		<b>철도</b><br>
+		국가기간수송망의 중추 기능을 담당<br>장거리 중량화물에만 이용<br>
+		<b>도로</b><br>
+		배후지나 내륙지로 연결하는 도로망은 수송의 대동맥<br>
+	<hr>
+	<h3>항만 정책</h3>
+		<ul>
+			<li>부산항을 동북아시아의 물류중심 거점항을 목표</li>
+			<li>항만시설 정비, 민영화, IT 시스템 도입, 항물류단지의 형성 등의 정책을 적극적으로 추진</li>
+			<li>3차 계획 수정계획에서는 세계 2대 컨테이너 환적 허브를 목표로 부산항의 기능이 확충이 더욱 강화되어지고 있음</li>
+		</ul>
+	<hr>
+	<h3>항만의 종류</h3>
+
+	<h5>계류시설: 선박을 육지에 매어 두는 일</h5>
+		<ul type="square">
+			<b>
+			<li>안벽(Quay): 물 밑바닥으로부터 수직으로 세워 올린 벽체나 벽면을 갖는 구조물</li>
+			<li>잔교(Pier)/계선주(bitt): 말뚝 구조상에 목재, 철재 상판콘크리트를 친 형식</li>
+			<li>물양장(Landing place): 전면수심이 보통 -4.0m미만인 안벽. 소형선박이 접안할 수 있는 간이 부두로 주로 어선, 부선등이 접안하여 하역하는 접안시설</li>
+			<li>돌핀(Dolphin): 해안에서 떨어진 바다 가운데에 고립해 배 길이의 2분의 1에서 3분의 1 간격으로 축조되고 일정 수심이 확보되는 위치에 선박이 계류하여 하역할 수 있도록 한 말뚝형 구조</li>
+			<li>Apron: 선박의 승객이 승강하거나, 화물 양적하가 이루어짐. 컨테이너터미널에는 Apron에 대형의 컨테이너 크레인(C/C)을 설치</li>
+			<li>선석(Berth): 항내에서 선박을 계선 시키는 시설을 갖춘 접안 장소</li>
+			</b>
+		</ul>
+		<a href="https://m.blog.naver.com/PostView.nhn?blogId=portbusan2&logNo=221545314699&navType=tl"><img src="https://mblogthumb-phinf.pstatic.net/MjAxOTA1MjRfNzcg/MDAxNTU4NjU0MzY5NzI4.YjXsHZinMzEgLLbL0X0xq8l9xf8LpvGfFj2M4q7fNyEg.aeue_2juyk0vw67th7FmIC6pYjRIQyAkFt-ZFDer6Bkg.PNG.portbusan2/%EC%A0%91%EC%95%88%EC%8B%9C%EC%84%A4_%EC%A2%85%EB%A5%98.PNG?type=w800"></a>
+<br>
+		<h3>하역 시설</h3>
+
+		<table border="1">
+			<tr>
+				<td><b>모빌 하버 크레인</b></td>			
+				<td><b>다목적 항만 크레인</b></td>
+				<td><b>컨테이너 크레인</b></td>
+				<td><b>리치 스텍커</b></td>
+				<td><b>탑 리프터</b></td>
+			</tr>
+			<tr>
+				<td>자체 동력에 의한 이동성이 좋으며 여러 종류의 화물 양하 및 적하작업에 사용되는 수직축을 중심으로 원을 그리며 도는 장비</td>
+				<td>1. 부두에 설치된 레일 위를 주행<br>2. 여러 종류의 화물 취급이 용이한 다목적 크레인</td>
+				<td>1. 부두 안벽 위에 설치<br>2. 선박 컨테이너를 양하<br>3. 부두컨테이너를 선박에 적하</td>
+				<td>야드에서 컨테이너를 직접 운반. 적재하거나 반출하는데 사용</td>
+				<td>공 컨테이너를 수직으로 적재 또는 정리작업에 사용</td>
+			</tr>
+			<tr>
+				<td><img src="https://mina0502.github.io/web/img/MHC.jpg" width="100%"></td>
+				<td><img src="https://mina0502.github.io/web/img/MPC.jpg" width="100%"></td>
+				<td><img src="https://mina0502.github.io/web/img/CC.jpg" width="100%"></a></td>
+				<td><img src="https://mina0502.github.io/web/img/RS.jpg" width="100%"></td>
+				<td><img src="https://mina0502.github.io/web/img/TLT.jpg" width="100%"></td>
+			</tr>
+			<tr>
+				<td><b>야드 트렉터와 야드 샤시</b> - 컨테이너 부두 내에서만 운행할 수 있도록 제작| 야드트렉터에 샤시를 부착한 상태로 사용</td>
+				<td><b>쉽언로더</b> - 양곡, 석탄, 고철, 광석 등의 포장되지 않은 화물의 양하 및 적하 작업에 사용되는 하역 장비</td>
+				<td><b>스택커 리크레이머</b> - 철광석, 석탄, 곡물 등의 살화물을 받아 지상의 일정지역에 야적하고 살화물을 실어 일정장소에 하역하는 장비</td>
+				<td><b>로딩 암</b> - 액체 화물을 선적하기위해 호스나 파이프를 묶어 견인시키는 장비</td>
+				<td><b>트렌스퍼 크레인</b> - 1. 야드에 있는 컨테이너를 적재 또는 반출하는 장비 &nbsp;2. 타이어식 RTGC&nbsp;3. 레일 식 RMGC</td>
+			</tr>
+			<tr>
+				<td><img src="http://www.kogl.or.kr/upload_recommend/2018/%EB%B6%80%EC%82%B0%ED%95%AD%EB%A7%8C%EA%B3%B5%EC%82%AC/thumb_B007-C008-0097-01_L.jpg" width="100%"></td>
+				<td><img src="https://mblogthumb-phinf.pstatic.net/MjAxOTA2MTNfMjA4/MDAxNTYwMzUxNjcyOTg2.-cRb0Lwq7B09mq-mhtz9H_zyboGLuUBGaDnyqLdDxoMg.pj0fxZ1ysCBU3MtT-efpKWExXc6ilMKN44wHPCL1oVQg.JPEG.wildtiger77/Ship_Unloader_%25EB%25B3%25B5%25EC%2582%25AC.jpg?type=w800" width="100%"></td>
+				<td><img src="https://mblogthumb-phinf.pstatic.net/MjAxOTA2MTNfMjgz/MDAxNTYwMzUxNzgwNDc3.n2ncD1Hb8CRII6Abv9Btgfh1gJkj7V6bCBZ512Ps75og._ObkgOw5dTXB4JSuT3svGI_I2wuBqwxB28uoI5DKQ1Ig.JPEG.wildtiger77/Stacker_Reclaimer_%EB%B3%B5%EC%82%AC.jpg?type=w800" width="100%"></td>
+				<td><img src="https://mblogthumb-phinf.pstatic.net/MjAxOTA2MTJfMTA1/MDAxNTYwMzUxMzQwOTc0.DpAnWp4bZXuABrBdo6JhVs6bHJ6N0O_FC6Xbf9i-EKgg.wGh2BEpuCHxtSmuEppNRGBAA9dVFA5ASURy-E4bdTZAg.JPEG.wildtiger77/cbe9caa5_64a2e342_9a17_4e64_aa6d_f1ddfd964710.jpg?type=w800" width="100%"></td>
+				<td><img src="https://mina0502.github.io/web/img/TC.jpg" width="100%"></td>
+			</tr>
+		</table>
+
+<hr>
+		<h3>부두 (배를 대고 여객이 타고 내리거나 짐을 싣고 부리는 곳)</h3>
+
+			<h5>부두의 형태</h5>
+			<ul>
+				<li><b>평형식</b> - 해안선과 평행</li>
+				<li><b>돌제식</b> - 안벽과 직각으로 돌출된 방식</li>
+				<li><b>쌍자식</b> - 돌제식 부두의 일종으로 바깥쪽은 대형선박, 안쪽은 소형선박이 정박</li>
+				<li><b>복합식</b> - 평행식 부두와 돌제식 부두의 복합형태</li>
+				<li><b>굴입식</b> - 육지쪽으로 굴입하여 축조되거나, 수면의 일부가 U자 형태로 매립된 부두</li>
+				<li><b>섬식</b> - 육지와 연결된 다리를 이용하는 형태의 부두</li>
+			</ul>
+			<br>
+		<table border="1">
+			<tr>
+				<th>여객부두</th>
+				<th>다목적부두</th>
+				<th>컨테이너부두</th>
+				<th>양곡부두</th>
+				<th>석탄부두</th>
+			</tr>
+			<tr>
+				<td>여객의 승하선을 위한 전용부두</td>
+				<td>여러 종류의 화물을 한 장소에서 처리할 수 있도록 시설을 갖춘 부두</td>
+				<td>컨테이너선이 주로 이용하는 부두</td>
+				<td>곡물의 적하 및 양하를 위한 부두</td>
+				<td>석탄의 적하 및 양하를 위한 부두</td>
+			</tr>
+			<tr>
+				<td><img src="http://www.nbnnews.co.kr/news/photo/202104/488039_531114_2435.jpg" width="300" height="150"></td>
+				<td><img src="https://www.ksg.co.kr/upload/bbs/2018/IMG20180315092756887018.jpg" width="300" height="150"></td>
+				<td><img src="https://mblogthumb-phinf.pstatic.net/20160205_152/ygpa11819_14546319403272ILro_JPEG/%B1%A4%BE%E7%C7%D7_%C4%C1%C5%D7%C0%CC%B3%CA%BA%CE%B5%CE_%C0%FC%B0%E6_%BB%E7%C1%F8.jpg?type=w800" width="300" height="150"></td>
+				<td><img src="https://image.dnews.co.kr/photo/photo/2011/10/25/201110251049375330155-2-36949.jpg" width="300" height="150"></td>
+				<td><img src="https://cdn.incheonnews.com/news/photo/202008/124740_125501_180.jpg" width="250" height="150"></td>
+			</tr>
+			<tr>
+				<th>유류부두</th>
+				<th>LNG부두</th>
+				<th>광석부두</th>
+				<th>시멘트부두</th>
+				<th>자동차부두</th>
+			</tr>
+			<tr>
+				<td>원유용과 제품용이 있음</td>
+				<td>출하용과 양하용이 있음</td>
+				<td>광석류를 전문적으로 취급하는 부두</td>
+				<td>하역장비와 저장고가 설치되어 있음</td>
+				<td>자동차 수출입을 위한 일시 보관용 넓은 야적장을 갖춘 부두</td>
+			</tr>
+			<tr>
+				<td><img src="https://imgnews.pstatic.net/image/001/2014/04/09/PYH2014040910130005700_P2_59_20140409180005.jpg?type=w647" width="300" height="150"></td>
+				<td><img src="https://menu.mtn.co.kr/upload/article/2020/10/27/2020102708414651673_00_647.jpg" width="300" height="150"></td>
+				<td><img src="https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory2&fname=http%3A%2F%2Fcfile30.uf.tistory.com%2Fimage%2F2744FB4C52CB96CE1C42B3" width="300" height="150"></td>
+				<td><img src="https://pds.joins.com/news/component/newsis/201706/28/NISI20170628_0013149700_web.jpg" width="300" height="150"></td>
+				<td><img src="https://blog.hmgjournal.com/upload/common/activeSquare/binary/201504171141502_DPBBX1FI.jpg" width="250" height="150"></td>
+			</tr>
+		</table>
+		<hr>
+		<h1>항만 물류</h1>
+
+	
+		<h3>화물 분류 - 포장</h3>
+
+		<ul>
+			<li><b>살화물</b>: 포장을 하지 않음 [탱크카고, 곡물, 석탄 등]</li>
+			<li><b>잡화</b>: 포장이 되는 화물</li>
+		</ul>
+<hr>
+		<h5>화물 분류 - 성상</h5>
+
+		<ul>
+			<li><b>위험화물</b> - 보관,취급,수송 중 인명 또는 선체에 위험을 줄 수 있는 화물</li>
+			<li><b>정량화물</b> - 청결하고, 악취가 나지 않아 다른 화물에 오손이나 손상을 줄 위험이 없는 화물</li>
+			<li><b>냉동화물</b> - 육류, 생선, 과일을 냉동 또는 냉장상태로 수송하는 화물</li>
+			<li><b>액체화물</b> - 용기에 포장된 액체상태 또는 반 액체상태의 화물&nbsp;누설이나 파손에 의하여 유출이 우려되는 화물</li>
+			<li><b>장척화물</b> - 길이가 긴 화물, 부피가 큰 화물, 배안에 싣기 불가능&nbsp;상갑판에 쌓거나 중량물 전용선이 필요</li>
+			<li><b>중량화물</b> - 부피에 비하여 무거운 화물. 대형 기중기, 기중기 선을 이용하여 하역</li>
+		</ul>
+<hr>
+
+	<h1>항만 화물</h1>
+	<h3>컨테이너</h3>
+
+	<h5>컨테이너 특징</h5>
+
+	<b>장점</b>
+	<ul>
+		<li>하역의 기계화로 하역시간 및 수송기간 단축</li>
+		<li>하주가 발행한 B/L(선하증권)이 목적지까지 유효하게 통용되므로 사무절차 간소화</li>
+		<li>운송수단간 환적이 용이하고 대량수송이 가능하여 운송경비 절감</li>
+		<li>Door to Door 서비스 등 신뢰성있는 서비스 제공 가능</li>
+	</ul>
+	<b style="color: red">단점</b>
+	<ul>
+		<li>하역장비, CY, CFS 등 대규모의 컨테이너 처리시설 필요</li>
+		<li>기항지 최소화로 기항지 이외로 수송되는 화물은 추가운임 발생</li>
+		<li>컨테이너 용기의 신속회수 및 손상방지 등 재고관리 애로 발생</li>
+		<li>항만시설 및 수송수단이 미비한 일부 국가에서는 부적합</li>
+	</ul>
+	<hr>
+
+		<h5>컨테이너 규격 (국제간의 해상화물 운송에는 주로 20'와 40'형 많이 사용)</h5>
+		<h5><ul>
+			<li>운송 경로를 변경할 때 조작이 용이할 것</li>
+			<li>화물의 양적(揚積)이 편리하게 설계될 것</li>
+			<li>내부용적이 1㎥ 이상일 것</li>
+		</ul></h5>
+
+		<table border="1" style="text-align: center;">
+			<tr>
+				<th>일반 컨테이너(G)</th>
+				<th>통풍 컨테이너(V)</th>
+				<th>드라이 벌크 컨테이너(B)</th>
+				<th>특정화물 컨테이너(S)</th>
+				<th>기기 부착형 서멀 컨테이너(R)</th>
+			</tr>
+			<tr>
+				<td>온도 조절이 필요없는 화물에 이용되는 표준형 컨테이너</td>
+				<td>감자,양파 등 농산물 수송시 환기가 원활히 되는 통풍 컨테이너</td>
+				<td>맥아, 소맥분, 가축사료 등의 분체 또는 분상체의 화물 수송에 적합한 컨테이너</td>
+				<td>가축용 컨테이너, 자동차 수송용 컨테이너, 활어 수송 등 3종류의 컨테이너가 있음</td>
+				<td>냉동 컨테이너</td>
+			</tr>
+			<tr>
+				<td><img src="https://www.kandscontainers.co.za/products/images/standard.gif" width="300" height="150"></td>
+				<td><img src="https://mina0502.github.io/web/img/VContainer.jpg" width="300" height="150"></td>
+				<td><img src="https://mina0502.github.io/web/img/BContainer.jpg" width="300" height="150"></td>
+				<td><img src="https://mina0502.github.io/web/img/SContainer.jpg" width="300" height="150"></td>
+				<td><img src="https://mina0502.github.io/web/img/RContainer.jpg" width="300" height="150"></td>
+			</tr>
+			<tr>
+				<th>착탈, 단열 서멀컨테이너(H)</th>
+				<th>오픈탑 컨테이너(U)</th>
+				<th>플랫폼 컨테이너(P)</th>
+				<th>탱크 컨테이너(T)</th>
+				<th>항공기용 컨테이너(A)</th>
+			</tr>
+			<tr>
+				<td>보온을 위한 컨테이너를 총칭</td>
+				<td>천장을 뗏다 붙였다 할 수 있는 컨테이너</td>
+				<td>표준보다 초과된 화물에 이용</td>
+				<td>액체상 화물 수송에 적합</td>
+				<td>항공기 동체모양에 맞춰 제작</td>
+			</tr>
+			<tr>
+				<td><img src="https://mina0502.github.io/web/img/HContainer.png" width="300" height="150"></td>
+				<td><img src="https://mina0502.github.io/web/img/UContainer.jpg" width="300" height="150"></td>
+				<td><img src="https://mina0502.github.io/web/img/PContainer.png" width="300" height="150"></td>
+				<td><img src="https://mina0502.github.io/web/img/TContainer.jpg" width="300" height="150"></td>
+				<td><img src="https://www.searates.com/design/images/uld/ld6.png" width="300" height="150"></td>
+			</tr>
+		</table>
+<br>
+	<h3>컨테이너 ISO 표식</h3>
+<br>
+	
+	<img src="https://cdn.maritimepress.co.kr/news/photo/201806/118212_25701_758.jpg">
+	<ol>
+		<li>3자의 알파벳 문자 : 선주 코드(Owner Code)</li>
+		<li>1자의 알파벳 문자(U는 컨테이너, C나 Z는 샤시) : 장비 구분(Equipment Category Identifier)</li>
+		<li>6자의 숫자 : 일련번호(Serial Number)</li>
+		<li>1자의 숫자 : 확인 식별 번호(Check Digit)</li>
+	</ol>
+	<hr>
+
+	<h3>하역</h3>
+
+	<h5>액체물 하역</h5>
+		<ul><li>선박은 탱크 바닥에서 연결된 파이프의 출구와 육상의 저장고로 탱크로부터 이어진 파이프를 접속장치로 연결하여 하역</li></ul>
+		<br>
+	<h5>고체화물 하역</h5>
+		<ul>
+			<li><b>잡화 하역</b>: 하역회사의 작업원에 의해 화물이 부두에 내려지는 것을 말함</li>
+			<li><b>중량물 하역</b>: 선박에 설치된 대형 기중기를 사용하여 하역</li>
+			<li><b>자동차 하역</b>: 전문 운전사가 운전하여 적재. 크레인등의 하역 장치는 불필요</li>
+			<li><b>살화물 하역</b>: 석탄전용선 등의 살물선은 언로더와 벨트컨베이어로 하역</li>
+			<li><b>목재하역</b>: 스윙붐이나 육상 크레인에 의해 하역</li>
+			<li><b>RORO선 하역</b>: 선박내에 출입할 수 있는 램프웨이를 통해서 수평으로 하역하는 방식 <small>(자동차전용선이나 카페리도 포함)</small></li>
+		</ul>
+		<br>
+	<h3>컨테이너 하역</h3>
+		<ul>
+			<li><b>일반부두</b>: 선석을 배정 받은 선박회사와 계약된 하역회사에서 하역 담당</li>
+			<li><b>전용부두</b>: 부두를 전담관리, 운영하는 컨테이너 터미널 운영회사가 하역 담당</li>
+		</ul>
+		<hr>
+	<h1>항만 경영</h1>
+
+	<h3>항만 관리</h3>
+	<b>항만활동이 이해관계자 모두에게 이익을 가져다주도록 노력해야함<br></b>
+		<ul>
+			<li>항장 - 항구를 관리하는 최고 책임자</li>
+			<li>항만관리자 - 항만관리를 하는 공공적 책임의 주체</li>
+			<li>항만관리 형태
+				<ul>
+					<li>국영제항 : 중앙정부 주도하에 운영・관리되는 항만</li>
+					<li>지방자치제항 : 지방자치단체 주도하에 운영・관리되는 항만</li>
+					<li>공영제항 : 항만 관리와 경영에 대한 일체의 권한을 부여 받은 기관</li>
+					<li>사유제항 : 사기업이 항만을 보유 하거나 중앙정부 또는 지방자치단체로부터 임차하여 운영・관리되는 항만</li>
+				</ul></li>
+			<li>우리나라 항만관리 기관
+				<ul>
+					<li>지방해양항만청</li>
+					<li>항만공사</li>
+					<li>지방자치단체</li>
+					<li>어항관리</li>
+				</ul></li>
+			<li>우리나라 정부의 항만 건설 관리. 운영 대행기관
+			<ul><li>한국컨테이너부두공단 (주요업무)
+				<ol>
+					<li>컨테이너 부두의 개발 및 관리 ・ 운영</li>
+					<li>컨테이너 부두 기능시설의 설치 및 관리 ・ 운영</li>
+					<li>컨테이너 화물의 유통 촉진을 위한 내륙 연계 수송기지와 교통시설의 개발 및 관리 ・ 운영</li>
+					<li>항만운송사업법에 따른 항만하역사업</li>
+					<li>항만시설의 개발 및 관리 ・ 운영을 위해 정부가 위탁한 사업</li>
+					<li>공단이 조성한 재원 범위 안에서 국토해양부장관이 위탁한 사업 외 승인하는 사업</li>
+					<li>항만 개발 및 관리 ・ 운영에 관한 연구 활동 지원을 위한 출연</li>
+				</ol></li></ul></li>
+				<h3>이해관계자</h3>
+				<ul>
+					<li>해운기업 - Q/C 등 장비를 추가로 투입해서 생산성을 높여 양적하 작업을 단축시키길 원함</li>
+					<li>화주 - 시간비용을 최소화하려고 함</li>
+					<li>터미널운영자 - 최소한의 안벽길이 및 안벽크레인을 설치하여 해운기업의 요구 조건을 충족시키려 함(적정 수준의 서비스를 제공할 수 있는 시설을 갖춰야 함)</li>
+					<li>정부와 항만당국 - 정부: 공익추구</li>
+				</ul>
+		<br>
+		<hr>
+		<h3>항만경영 형태</h3>
+		<ul>
+			<li>지주형항만</li>
+			<li>도구형항만</li>
+			<li>운영형항만</li>
+		</ul>
+		<hr>
+		<h3>항만운영지원</h3>
+		<b>CIQ</b>
+		해외 도항 수속의 총칭 (C :관세, I :출입국 심사, Q :검역)/<br>
+		<ol>
+			<li>세관 : 관세의 부과 ・ 징수, 통과하는 화물에 대한 단속</li>
+			<li>출입국관리사무소 : 내・외국인의 출입국관리에 대한 사무를 관장</li>
+			<li>검역소 : 운송수단과 승객 및 승무원 또는 화물에 대한 검역절차와 예방조치에 관한 사항의 사무를 처리</li>
+			<li>기타 검역 및 검사 기관<br><b>국립수의과학검역원</b> : 수출입동물의 검역<br><b>국립식물검역원</b> : 수출입식물의 검역<br><b>국립수산물품질검사원</b> : 수산제품의 검사 및 포장에 관한 조사・분석과 지도에 관한 사무를 담당</li>
+		</ol>
+		<hr>
+		<h3>항만물류정보시스템</h3>
+<br>
+		<h4>항만물류는 국제경쟁에 있어서 엄격한 분야로써 <br>
+			비용과 서비스 두 부분에 대해서 특히 엄격함<br>
+			간단하게 비용을 내린다고 좋은게 아니라, 서비스의 질을 생각하지 않으면 안됨</h4>
+<br>
+		<h5>항만정보화</h5>
+			<ul>
+				<li>항만정보화
+					<ul><li><b>항만관리 및 운영정보 시스템</b> - 항만관리운영의 효율화를 도모하고 항만의 과학적 관리를 위한 정책결정을 지원 + 항만이용자에게 편의 제공</li>
+						<li><b>선박교통관제서비스(VTS)</b> - 선박통항의 안전과 효율성을 증진시키고 환경을 보호하기 위하여 항만과 선박의 움직임을 첨단장비로 관찰하여 안전 운항을 위한 조언을 제공</li>
+						<li><b>터미널운영시스템</b> - 선석계획, 선박양적하계획, 장치계획, 하역작업통제 등 시스템 제공</li></ul></li>
+				<li>정보처리방식 - EDI <br>(컴퓨터의 고속사무처리 능력과 데이터통신 기술을 결합한 문자 통신수단. 컴퓨터와 컴퓨터간에 교환하여 재입력과정없이 직접 업무에 활용할 수 있는 정보전달방식)
+					<ul>
+						<li>서류를 표준화된 양식을 통해 전자적 신호로 바꿔 컴퓨터 통신망을 이용, 거래처에 전송하는 시스템</li>
+						<li>기존의 서류를 통한 업무 처리와는 달리 컴퓨터를 이용하여 사무실에서 빠르고 간편하게 업무를 처리할 수 있음</li>
+						<li>EDI의 대상은 컴퓨터가 직접 읽어서 해독하고 인간의 개입 없이 다음 업무처리를 자체적으로 처리할 수 있는 주문서, 영수증 등과 같은 정형화된 자료</li>
+					</ul></li>
+			</ul>
+			<img src="https://image.reportshop.co.kr/newprimg/1094/1093060-0003.gif">
+			<br>
+
+			<b>물류관련 정보통신망 전담사업자</b>
+				<ul>
+					<li><b>KL-Net</b> : EDI서비스를 중계하는 VAN사업자, 수출입류 공급자 및 수요자간 업무효율화를 통해 기업의 물류비 절감과 항만경제력 강화에 기여</li>
+					<li><b>KTNET</b> : 우리나라의 상역, 외환, 통관, 수출입물류 등의 무역업무 전과정의  one-stop처리하는 전자무역 기반 사업자, 수출입물류 업체 업무 효율성 강화</li>
+				</ul>
+			<br>
+			<b>우리나라 수출입물류종합정보서비스 - 국가물류종합 서비스를 위해 추진된 사업</b>
+				<ul>
+					<li><b>추진 동기</b> - 시간 및 비용손실 절감과 행정기관의 업무 효율화 및 정보공유 확대 요구가 증대되는 등 관련업무를 일괄처리할 필요가 있었음</li>
+				</ul>
+			<br>
+			<b>우리나라의 공공 항만물류정보시스템</b>
+				<ul>
+					<li><b>Port-MIS</b>: 항만운영정보시스템(선박의 입출항, 선박재박, 선석신청지정, 화물반출입 등의 실시간 정보)</li>
+					<li><b>SP-IDC</b>: 해운항만물류정보센터(민원업부, 자료제공)</li>
+					<li><b>GCTS</b>: 컨테이너/차량 위치에 대한 가시성 확보</li>
+					<li><b>VTS</b>: 선박 통항의 안전</li>
+					<li><b>수출입화물통관시스템</b>: 공공항만물류정보시스템</li>
+				</ul>
+			<hr>
+			<h1>컨테이너 터미널 물류 시스템</h1>
+
+			<h3>컨테이너</h3>
+
+			<ul>
+				<li>단위적재운송(Unit Load System)을 위한 표준화된 상자 모양의 용기</li>
+				<li>유통 전과정의 일관 수송 가능</li>
+			</ul>
+			<hr>
+			<h1>컨테이너 표준 크기</h1>
+
+			<table border="1">
+				<tr>
+					<th>길이</th>
+					<th>높이</th>
+					<th>폭</th>
+				</tr>
+				<tr>
+					<td>(2)20'<br>(4)40'<br>(L)45'<br>(M)48'</td>
+					<td>(2)8' 6"<br>(5)9' 6"<br>HIGH CUBE</td>
+					<td>8'</td>
+				</tr>
+			</table>
+			<br><br>
+			<small>ISO-code에 의한 컨테이너 길이 분류</small>	
+			<table border="1">
+				<tr>
+					<th>길이mm</th>
+					<th>2991</th>
+					<th>6068</th>
+					<th>9125</th>
+					<th>12192</th>
+					<th>7150</th>
+					<th>7315</th>
+					<th>7430</th>
+					<th>7450</th>
+				</tr>
+				<tr>
+					<td>길이 ft,in</td>
+					<td>10</td>
+					<td>20</td>
+					<td>30</td>
+					<td>40</td>
+					<td></td>
+					<td>24</td>
+					<td>24 6</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>CODE</td>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+					<td>A</td>
+					<td>B</td>
+					<td>C</td>
+					<td>D</td>
+				</tr>
+				<tr>
+					<th>7820</th>
+					<th>8100</th>
+					<th>12500</th>
+					<th>13106</th>
+					<th>13600</th>
+					<th>13716</th>
+					<th>14630</th>
+					<th>14935</th>
+					<th>16154</th>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>41</td>
+					<td>43</td>
+					<td></td>
+					<td>45</td>
+					<td>48</td>
+					<td>49</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>E</td>
+					<td>F</td>
+					<td>G</td>
+					<td>H</td>
+					<td>K</td>
+					<td>L</td>
+					<td>M</td>
+					<td>N</td>
+					<td>P</td>
+				</tr>
+			</table>
+			<small> ISO Code는 컨테이너 규격 분류 XXXX의 문자중 첫째 자리</small>
+			<br><br>
+			<table border="1">
+				<tr>
+					<td colspan="2">높이</td>
+					<td>너비</td>
+					<td>너비</td>
+					<td>너비</td>
+				</tr>
+				<tr>
+					<td>mm</td>
+					<td>ft inc</td>
+					<td>2438(8fit)</td>
+					<td>2438mm<폭=<2500</td>
+					<td>2500mm<폭</td>
+				</tr>
+				<tr>
+					<td>2438</td>
+					<td>8</td>
+					<td>ISO-CODE=</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>2591</td>
+					<td>8  6</td>
+					<td>2</td>
+					<td>C</td>
+					<td>L</td>
+				</tr>
+				<tr>
+					<td>2743</td>
+					<td>9</td>
+					<td>4</td>
+					<td>D</td>
+					<td>M</td>
+				</tr>
+				<tr>
+					<td>2895</td>
+					<td>9  6</td>
+					<td>5</td>
+					<td>E</td>
+					<td>N</td>
+				</tr>
+				<tr>
+					<td>2895</td>
+					<td>9  6</td>
+					<td>6</td>
+					<td>F</td>
+					<td>P</td>
+				</tr>
+				<tr>
+					<td>1295</td>
+					<td>4  3</td>
+					<td>8</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>=<1219</td>
+					<td>4</td>
+					<td>9</td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+			<small>ISO Code는 컨테이너 규격 분류 XXXX의 문자중 두번째 자리</small>
+			<hr>
+			<h1>컨테이너 종류</h1>
+
+			<h3>용도에 따른 분류</h3>
+
+			<ul>
+				<li>Dry Container (일반적인 용도)</li>
+				<li>Reefer Container (냉장, 보온)</li>
+				<li>Platform Container (착탈식)</li>
+				<li>Tank Container (가스, 액체)</li>
+			</ul>
+			<hr>
+			<h1>컨테이너 표식</h1>
+
+			<table border="1">
+				<tr>
+					<th>SCZ</th>
+					<th>U</th>
+					<th>714002</th>
+					<th>6</th>
+				</tr>
+				<tr>
+					<td>소유자기호(owner code)</td>
+					<td>장비종류 식별기호</td>
+					<td>일련번호</td>
+					<td>검정부호</td>
+				</tr>
+			</table>
+			<small>신 방식</small>
+			<br><br>
+			<table border="1">
+				<tr>
+					<th>BM</th>
+					<th>22</th>
+					<th>10</th>
+				</tr>
+				<tr>
+					<td>국적기호(country code)</td>
+					<td>규격기호 (size code)</td>
+					<td>규격기호 (type code)</td>
+				</tr>
+			</table>
+			<small>구 방식</small>
+			<hr>
+			<h1>컨테이너 단위</h1>
+				<h2>TEU : 길이가 상이한 컨테이너를 20자 길이를 기준으로 양을 환산한 단위</h2>
+				<h3>(Twenty foor Equivalent Unit)</h3>
+				<br>
+				<h2>FEU (Forty foot Equivalent Unit</h2>
+				<h3>1FEU = 2TEU</h3>
+			<hr>
+
+			<h1>컨테이너 용어</h1>
+
+			<h3>Maximum Gross Weight : 컨테이너의 총 중량</h3><br>
+			<h3>Tare Weight : 컨테이너 자체 중량</h3><br>
+			<h3>Payload Weight : 컨테이너에 적재할 수 있는 화물의 최대 중량(순중량)<br>Gross Weight - Tare Weight</h3><br><br>
+
+			<h3>고박(securing) : 컨테이너 내부의 화물을 고정시켜주는 작업</h3><br>
+			<h3>쇼어링(shoring) : 4각 구조의 지주를 사용하여 고정</h3><br>
+			<img src="https://t1.daumcdn.net/cfile/tistory/2433F440534F55A328" width="200" height="200">
+			<h3>쵸킹(Choking) : 화물과 화물사이, 화물과 컨테이너내부 옆면사이를 삽입하여 수평으로 고정시킴</h3><br>
+			<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fcks7JE%2FbtqDGhclmev%2FrvKA5q7vcR5xu8ekq47JU0%2Fimg.jpg" width="200" height="200">
+			<h3>랏싱(lashing) : 컨테이너 바깥 하부에 있는 랫싱용 고리를 이용하여 로프, 밴드 또는 그물을 사용하여 화물을 고정</h3><br>
+			<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbZ5XPK%2FbtqDH0t83uY%2Fb2hfAe1RxjtrRHtEy3zeB1%2Fimg.jpg" width="200" height="300">
+			<h3>랏싱바(lashing bar): <br>
+				<img src="http://www.pacificmarine.net/images/container-lashing-bars/container-lashing-bar-knob.jpg" width="300" height="100"><br></h3>
+			<h3>랏싱콘(lashing cone): <br>
+				<img src="https://www.ils.be/wp-content/uploads/2017/02/BF-61_3D.jpg" width="100" height="100"><br></h3>
+			<hr>
+			<h1>컨테이너선 - 분류 방식</h1>
+			<br>
+			<h3>선형에 의한 분류</h3>
+				<ul>
+					<li>혼재형(Conventional Ship)</li>
+					<li>분재형(Semi-Container Ship)</li>
+					<li>전용형(Full Container Ship)</li>
+				</ul>
+			<br>
+			<h3>하역 방식에 의한 분류</h3>
+				<ul>
+					<li>LO/LO(Lift On/ Lift Off)</li>
+					<li>RO/RO(Roll On/ Roll Off)</li>
+				</ul>
+<hr>
+			<h1>컨테이너선 - 선내구조</h1>
+
+			<h3>DECK - 갑판에 컨테이너를 적재하는 곳</h3><br>
+			<h3>HOLD - 선창 내부</h3><br>
+			<h3>Hatch Cover - 선창 덮개</h3>
+			<h3>Cell Guide - HOLD내에서 컨테이너가 움직이지 않도록 받쳐주는 지주대</h3>
+			<hr>
+			<h1>Hatch Cover</h1>
+
+				<h3>종류</h3>
+
+				<ul>
+					<li>Lifting Type(Lift Away Type) : 컨테이너선에 주로 쓰이는 방식</li>
+					<li>Rolling Type : 벌크선에 주로 사용되는 방식(Side Rolling)&nbsp;&nbsp;End Rolling, Side Rolling, Piggy Back & Telescopic으로 세분화</li>
+					<li>Folding Type</li>
+					<li>Sliding Type</li>
+					<li>Roll Stowing Type</li>
+				</ul>
+				<big><b>양적하 중에는 Apron에 배치</b></big>
+
+				<br><br>
+
+				<h3>Block</h3>
+				<ul>
+					<li>장치장을 크게 구획</li>
+					<li>알파벳과 숫자로 구역을 나눔</li>
+				</ul>
+
+				<h3>BAY</h3>
+				<ul>
+					<li>Block을 20' 컨테이너 길이만큼 등분한 것</li>
+					<li>컨테이너 길이의 격자형으로 구획되어있는 영역</li>
+					<li>40자의 경우 02,06,10,14 순으로 호칭</li>
+					<li>20자의 경우 01,03,05,07 순으로 호칭</li>
+				</ul>
+
+				<h3>Row</h3>
+				<ul>
+					<li>Row수가 홀수 개면 배의 중간을 00</li>
+					<li>Row수가 짝수 개면 00없음</li>
+					<li>홀수 숫자는 우현, 짝수 숫자는 좌현</li>
+				</ul>
+
+				<h3>Tier</h3>
+				<ul>
+					<li>컨테이너가 쌓이는 층</li>
+					<li>Hold는 밑에서부터 02, 04, 06, 08</li>
+					<li>Deck는 밑에서부터 82, 84, 86, 88</li>
+				</ul>
+				<br>
+				<img src="https://www.researchgate.net/profile/Dines_Bjorner/publication/228975675/figure/fig22/AS:668283950874632@1536342718260/Bay-Row-Tier-Plane-Intersection-Cell.png" width="500" height="500">
+				<hr>
+				<h1>컨테이너 적재</h1>
+
+				<h3>Positioning Cone - 최하단 컨테이너 고정</h3>
+
+				<h3>Lashing - 1,2단 컨테이너 고정,&nbsp;&nbsp;Turnbuckle과 연결</h3>
+
+				<h3>Stacking Cone/Lashing Cone - 각 단의 컨테이너 사이를 고정</h3>
+
+				<h3>Bridge Fitting - 갑판 위 최상단의 컨테이너 연결</h3>
+
+				<hr>
+
+				<h1>내륙수송</h1>
+
+				<h3>도로운송 - 일반적인 방법</h3>
+
+				<h3>철도운송 - 과거 터미널 밖까지만 연결되었지만 최근 터미널 내부까지 들어오는 방식으로 화물철도 개통</h3>
+
+				<hr>
+				<h1>컨테이너터미널 - 운영시스템</h1>
+
+				<h3>Chassis System</h3>
+				<ul>
+					<li>장점: 동시 양적하, YT만 필요</li>
+					<li>단점: 광대한 토지, 대량의 샤시</li>
+				</ul>
+
+				<h3>Straddle Carrier System</h3>
+				<ul>
+					<li>장점: 기동성</li>
+					<li>단점: 고가, 정밀작업 필요</li>
+				</ul>
+
+				<h3>Transfer Crane System</h3>
+				<ul>
+					<li>장점: 낮은 운용비, 자동화, 고단적</li>
+					<li>단점: 일정속도로 처리</li>
+				</ul>
+				<hr>
+				<h1>ICD</h1>
+
+				<h3>Inland Container Depot</h3>
+				<ul>
+					<li>소화물의 혼재와 LCL 및 FCL 컨테이너의 장치 및 통관이 이루어지는 장소</li>
+					<li>복합연계운송이 효율적으로 이루어질 수 있는 전략적인 장소에 위치</li>
+				</ul>
+				<small>LCL : 혼적화물 | FCL : 만적화물</small>
+				<hr>
+				<h1>컨테이너 터미널 구조</h1>
+				<img src="https://mblogthumb-phinf.pstatic.net/20120901_139/chaos7942_1346474230079HnTV6_JPEG/%C5%CD%B9%CC%B3%CE_%B1%B8%C1%B6.jpg?type=w2" style="margin-left: 40%">
+				<hr>
+				<h1>Quay</h1>
+				<b>컨테이너 전용선을 접안시키는 곳<br>선박의 동요를 막기 위한 계선주(bitt)가 있음</b><br>
+				<img src="https://t1.daumcdn.net/cfile/tistory/27208C3652D0E01320" width="500" height="200">
+
+				<hr>
+				<h1>Apron</h1>
+				<b>안벽에 접한 30m ~ 40m 영역, Q/C가 설치되어 선박의 양적하가 이루어짐 <br> Q/C가 주행할 수 있도록 철로 설치</b><br>
+				<img src="https://t1.daumcdn.net/cfile/tistory/26110E4352D155BF3F" width="500" height="200">
+				<hr>
+				<h1>Marshalling yard</h1>
+				<b>컨테이너선의 입항 전, stowage plan에 따라 선적예정 컨테이너를 목적지별 등에 따라 미리 정렬해두는 공간<br>Apron에 인접</b><br>
+				<img src="https://t1.daumcdn.net/cfile/tistory/250A784152CE5EFA13" width="500" height="200"><br>
+				<b>황색 부분을 slot이라고 함</b>
+				<hr>
+				<h1>C/Y [Container Yard]</h1>
+				<b>Marshalling yard를 포함한 <mark>이동 대기중</mark>인 컨테이너들의 적치 장소<br>자동화에는 수직배치가 적합</b>
+				<br>
+				<img src="https://mina0502.github.io/web/img/CY.png" width="500" height="200"><br>
+				<hr>
+				<h1>GATE</h1>
+
+				<h3>터미널 내외로 컨테이너의 반출입이 이루어지는 장소</h3>
+					<ul>
+						<li>내륙운송업자와 터미널 간 컨테이너에 대한 관리 책임이 전환되는 곳</li>
+						<li>컨테이너의 이상유무점검, 장치될 위치를 운전자에게 알림</li>
+					</ul>
+				<br>
+				<img src="https://www.dailylog.co.kr/news/photo/201604/11553_4579_2721.jpg" width="500" height="200">
+				<br>
+				<hr>
+				<h1>CFS</h1>
+
+				<h3>수출의 경우 - LCL화물(혼적화물)의 선별, FCL화물(만적화물)로 바꿔주는 장소</h3>
+				<h3>수입인 경우 혼재화물, 단일 화주 화물을 컨테이너로부터 인출하여, 수하주별로 선별 인도</h3><br>
+				<img src="https://t1.daumcdn.net/cfile/tistory/2356F04E52D141A008" width="500" height="200">
+				<hr>
+				<h1>하역장비 - T/C (Transfer Crane)</h1>
+
+				<h2>RTGC (타이어 방식)</h2>
+				<ul>
+					<li>Rubber Tired Transfer Crane</li>
+					<li>이동이 가능하지만 정지상태에서 회전</li>
+					<li>작업 시에는 앞뒤로만 이동 가능</li>
+					<li>이동이 필요할 때는 Y/T, S/C로 작업</li>
+				</ul>
+
+				<h2>RMGC (레일 방식)</h2>
+				<ul>
+					<li>Rail Mounted Transfer Crane</li>
+					<li>레일 위에서만 이동</li>
+					<li>작업 속도가 빠름, 자동화에 유리</li>
+					<li><img src="https://mina0502.github.io/web/img/ACT.png" width="700" height="300"></li>
+				</ul>
+				<hr>
+				<h1>하역장비 - 기타</h1>
+
+				<h3>Reach stacker</h3>
+				<ul>
+					<li>적컨테이너 수송가능</li>
+					<li>기동성이 좋음</li>
+				</ul>
+
+				<h3>Top lifter - 공컨테이너 수송용(공 컨테이너를 수직으로 적재할 수 있음)</h3>
+
+				<h3>Straddle Carrier</h3>
+				<ul>
+					<li>YT를 이용하지 않고 컨테이너를 운반</li>
+					<li>단적수가 제한</li>
+				</ul>
+
+				<h3>AGV - Automatic Guided Vehicle</h3>
+				<br>
+				<h3>RTG - Rubber Tyred gantry Crane</h3>
+				<hr>
+				<h1>컨테이너 터미널 자동화</h1>
+					<a href="https://patrick.com.au/locations/brisbane/"><img src="https://mina0502.github.io/web/img/Terminal.png" width="700" height="300"></a>
+					<h2>필요성</h2>
+						<h3>많은 컨테이너화물을 양적하 야드에 장치, 이송하기 위하여 하역,이송, 보관의 컨테이너터미널 작업의 효율을 향상시킬 수 있는 시스템</h3>
+						<ol>
+							<li>항만 간 운영비 경쟁 - 전략적, 비용경쟁적 우위 확보</li>
+							<li>선사, 얼라이언스의 초대형선의 운항에 따른 생산성 향상요구</li>
+						</ol>
+
+					<br>
+
+				<h2>컨테이너 터미널의 전산 설비</h2>
+
+				<h3>정보처리 시스템</h3>
+					<ul>
+						<li>과거의 터미널 운영은 컨테이너 물류 처리를 수작업으로 했지만 현재는 자동화가 됨</li>
+						<li>많은 인력과 장비들이 상호 유기적으로 결합되어 운영</li>
+						<li>선박 회전율을 증대시키기 위해 다량의 자료를 신속, 정확하게 정보로 가공처리</li>
+					</ul>
+
+					<h3>터미널 운영시스템의 소프트웨어 구성</h3>
+						<ul>
+							<li>계획 시스템 
+								<ul>
+									<li>선석 계획: 터미널에 접안하는 선박의 접안 위치와 일정계획을 수립</li>
+									<li>장치 계획: 선박에 양,적하 할 컨테이너를 장치장에 장치 할 계획을 수립</li>
+									<li>양,적하 계획: 선박에 양, 적하 할 컨테이너 위치와 작업 순서 계획</li>
+									<li>장비 배차 계획 : 야드에서 작업 할 각종 하역 장비의 배차를 계획</li>
+								</ul></li>
+								<br>
+								<li>작업 시스템 - 4가지의 부차시스템으로 세분할 수 있음
+									<ul>
+										<li>게이트 운영: 육상에서 컨테이너를 인수도</li>
+										<li>야드 운영 : 하역 장비의 작업을 지시</li>
+										<li>본선 운영 : 선박에서 양, 적하 작업을 함</li>
+										<li>작업 관제 : 각 작업을 감시 및 제어함</li>
+									</ul></li>
+						</ul>
+						<br>
+					<ul>
+						<li>지원 시스템
+							<ul>
+								<li>통계 시스템: 하역 작업 결과에 의한 통계 자료를 생성</li>
+								<li>정산 시스템: 하역 작업의 결과로 선사 및 화주를 위한 하역비 청구서 작성</li>
+								<li>작업 지원 시스템 : 타 매체에 의해 수록된 컨테이너 물류정보내의 누락된 항목의 보완 입력, 관련 업체와 전자적 자료교환</li>
+							</ul></li>
+					</ul>
+							<img src="https://mina0502.github.io/web/img/oper_07.jpg">
+
+				<h2>터미널 운영을 위한 컴퓨터 하드웨어 구성</h2>
+					<ul>
+						<li>컴퓨터 현황
+							<ul>
+								<li>OS : 제작회사 별로 독특하게 설계된 특정 컴퓨터에서만 활용되는 각 사 고유의 OS 사용</li>
+								<li>DB : 자사의 OS에 적용되는 고유 제품, Oracle Informix, Sysbase 등 범용 OS 사용</li>
+								<li>언어 : C, Basic, Visual C, JAVA 등</li>
+							</ul></li>
+						<li>주전산기의 구성
+							<ul>
+								<li>무정지 운전을 위한 무장애 주전산기는 신뢰성은 좋으나 고가이고 운영의 폐쇄성으로 선택에 어려움이 있음</li>
+								<li>주전산기 다수를 병렬로 구성하는 다발형 구성을 채택</li>
+							</ul></li>
+						<li>EDI변환기 구성
+							<ul>
+								<li>EDI변환기는 고유한 양식의 거래 자료를 표준양식의 전자문서로 변환하여 송신하고 수신된 전자문서를 내부 양식으로 변환하는 역할을 함</li>
+							</ul></li>
+					</ul>
+					<br>
+					<h2>GATE 자동화</h2>
+					<ul>
+						<li>GATE에서의 물류 정체의 시간 단축과 장치장내 하역 장비의 사전 배치계획, GATE의 인건비 절약 및 자사 시설의 현대화 홍보</li>
+						<li>GATE에서의 자료 입력 및 출력을 운송기사의 조작과 자동화 매체로 대행하여 반, 출입 사항을 자동으로 처리</li>
+						<li>GATE 자동화를 위해서는 반, 출입 될 컨테이너에 대한 정보가 사전에 컨테이너 터미널에 도착해야함</li>
+					</ul>
+					<h2>우리나라 GATE 자동화 추진</h2>
+					<ul>
+						<li>컨테이너 부두 전산 선진화 계획
+						<ul>
+							<li>1994.07 사설 표준형 방식 채택</li>
+							<li>1994.09 컨테이너부두 전산 선진화 계획 수립</li>
+							<li>1996.03 컨테이너 터미널의 GATE 자동화 개시</li>
+						</ul></li>
+						<li>GATE 자동화 효과
+							<ul>
+								<li>물류 EDI활성과 터미널의 인건비 절감</li>
+								<li>운송차량의 GATE 정체 시간 감소</li>
+							</ul></li>
+					</ul>
+
+					<h2>GATE 자동화 방식</h2>
+					<ul>
+						<li>바코드 방식: GATE 입,출입 시 운전기사가 GATE에 설치된 인식기에 접촉하는 방식</li>
+						<li>RFID 방식 : 무선 인식 장치를 차량에 부착하여 GATE 입,출입 시 자동으로 감지하는 방식</li>
+						<li>문자 인식 방식(OCR) : 카메라를 통해 영상 이미지를 문자로 변환하는 방식</li>
+					</ul>
+
+					<br><br>
+
+					<h2>CRANE 자동화</h2>
+
+					<h3>컨테이너 크레인 구성요소</h3>
+
+					<h3>Hoist - 전동기, 감속 장치, 와인딩 드럼 등을 일체로 통합시킨 소형의 감아올리기 기계로써 Spreader를 종행으로 조종</h3>
+					<h3>Trolly - 짐을 매달은 체인을 지지하고 레일 위를 주행하는 브래킷이 달린 작은 쇠바퀴로써 Spreader가 짐을 집으면 이것을 통해 이동</h3>
+					<h3>Spreader - 컨테이너의 하역 작업에 사용되는 컨테이너를 매다는 기구. 컨테이너를 고정시켜 옮김</h3>
+					<h3>Tie down - 크레인이 작업중 흔들리지 않도록 밧줄, 케이블 또는 기타 수단을 가지고 고정시키거나 잡아매는 역할</h3>
+					<br><br>
+
+					<h2>CRANE 자동화</h2>
+
+					<h3>크레인의 운전 - 컴퓨터 기술의 발달로 현재는 전자식 운전방식으로 제어되고 있음</h3>
+
+					<h3>크레인 운전의 자동화 발전 단계</h3>
+					<ol>
+						<li>음성 통신에 의한 작업지시 접수 및 결과통보</li>
+						<li>데이터통신 장치를 설치하여 작업지시 접수 및 결과통보</li>
+						<li>컨테이너 적재 위치를 입체적으로 설정하여 탑재 컴퓨터의 위치 검출 장치로 적재 위치를 자동으로 제어</li>
+						<li>탑재 컴퓨터, 위치 감지장치 및 구동장치를 회로로 연결하여 최적 운전 조건 산정</li>
+						
+					</ol>
+					<hr>
+					<h1>하역비 부담조건</h1>
+					<h3>berth term</h3>
+					<ul>
+						<li>적양지의 본선하역비를 모두 운송인(선박회사)이 부담한다는 조건</li>
+						<li>특별한 것 이외에는 화주가 선적화물을 본선의 선측까지 운반하여 거기에서 운송인의 손에 인도하며 <br>거기에서부터 본선 선적은 운송인이 수배하여 행함</li>
+						<li>양지에 있어서 본선에서 양화는 운송인이 행하고, 수화주는 선측에서 화물을 수취한 시점에서 시작되어 화물을 수화주에게 인도한 시점에서 운송인의 의무는 종료</li>
+					</ul>
+
+					<br>
+					<h3>F.I.O (free in and out)</h3>
+					<ul>
+						<li>적지와 양지에 있어서 본선하역을 모두 화주측의 수배와 비용으로 행해지는 운임조건</li>
+						<li>운송인측 : 적화(in) 및 양화(out)를 하지 않음(free)</li>
+					</ul>
+					<br>
+					<h3>F.I와 F.O</h3>
+					<ul>
+						<li>본선하역비 부담조건을 적양지별로 따로 정할 수 있음</li>
+						<li>F.I(free in): 적지에서의 본선하역비: 화주부담, 양지에서 본선하역비: 운송인부담
+							<ul>
+								<li>양지에서는 화물들을 다른화물들과 같이 이반항만에서 양화되는 일이 많으므로 양하하는 본선 하역은 선박회사가 일관하여 행함</li>
+							</ul></li>
+						<li>FO(free out): 적지에서 선내하역비는 운송인이 부담하고 양지에서의 본선하역비는 화주가 부담</li>
+					</ul>
+					<br>
+					<h3>gross term 과 net term</h3>
+					<ul>
+						<li>gross term : 항비, 적양화 하역비 및 연안 부선하역비 일체를 선주가 부담</li>
+						<li>net term : 일체의 비용을 화주가 부담</li>
+					</ul>
+					<br>
+					<h1>일반화물 하역</h1>
+					<h3>본선선적 수속</h3>
+					<ul>
+						<li>직적 : 송화인이 자기의 책임으로 화물을 직접 선측까지 반입하여 선적</li>
+						<li>창수적 : 선주 또는 대리인이 창고를 경유하여 선적</li>
+						<li>개품운송 : 그 어느 경우에도 선적작업은 운송인의 비용과 책임으로 하역업자가 작업을 하는 것이 통례</li>
+					</ul>
+					<br>
+					<h3>직적</h3>
+						<h5>본선수취증(M/R) : 선명, 양지, 화인, 품명, 수량, 수화인 등 필요한 사항을 기입한 서류를 작성하여 신청자에게 교부</h5>
+					<ul>
+						<li>화주가 자기소유 또는 그 대리인의 부선에 의하여 화물을 반입하고 직접 선측에 인도하는 것으로 주로 대량화물 선적에 이용</li>
+						<li>화주는 본선수취증을 선박회사에 제출하고 선하증권(B/L)을 발급받으면 모든 선적수속이 완료</li>
+						<li>선적에 있어 화물의 수량에 과부족이 있거나 화물의 손상이 발견될 경우 <br>일등항해사는 그 적요를 기입한 사고부본선수취증을 발행</li>
+					</ul>
+					<br>
+					<h3>창수적</h3>
+					<ul>
+						<li>선적대리점에 대하여 발행한 창수지시서 및 창수증에 소정의 사항을 기입하여 신청자에게 교부<br>선적지시서와 창수지시서에는 선박회사의 책임자가 서명</li>
+						<li>송화인은 서류와 함께 화물을 선적대리점의 창고에 반입, 대리점에서 창수증을 수령</li>
+					</ul>
+
+					<hr>
+					<h3>적화관계 서류의 흐름</h3>
+					<ol>
+						<li> 송화주의 선사 및 선사의 지점 대리점에 대한 선복신처과 국적선불 취항선증명서(waiver)제출, 운송계약의 체결</li>
+						<li>선사의 적화예약 목록을 작성 선적자(송화인)와 본선에 통지</li>
+						<li>선사의 등록 검량회사에 용적중량증명서의 발행의뢰</li>
+						<li>송화주는 세관에 수출신고서(export declaration)제출, 수출허가서(export permit) 취득</li>
+						<li>송화주의 해상보험계약 체결과 해상보험증권(marine insurance policy) 취득</li>
+						<li>선사에 선적자에 대한 선적지시서 교부</li>
+						<li>총적화 화물을 창고에서 인수할 때 창고수취증(warehouse receipt)교부</li>
+						<li>화물의 선적완료 후 선적자에게 본선수취증(M/R: mate's receipt) 교부</li>
+						<li>선사에서 M/R과 B/L과의 교환 발행</li>
+						<li>본선측에서 적화종료후 해치 리스트(hatch list), 본선화물적부도, 선복보고서(S/R : space report), 적화감정보고서(stowage survey report)의 작성과 선사 및 대리점에 송부</li>
+						<li>선사 및 대리점에서 작성한 적화목록을 본선과 대리점에 송부</li>
+						<li>선사 및 대리점에서 작성한 운임표의 작성과 양륙지로 송부</li>
+						<li>선사 및 대리점은 M/R에 기준한 선적사고화물목록(condition report or exception list)을 작성하고 양륙지에 송부</li>
+					</ol>
+					<h3>wavier - 수출입화물의 운송에 있어서 가급적 자국선박을 이용함으로서 외화를 절약하고 해운업을 발전시키기 위하여 취해진 제도의 하나로서<br> 이 증명을 받은 외국선박에 화물을 선적할 수 있는 제도</h3>
+					
+					<hr>
+					<h3>적화목록 (M/F) - 양화항에서 세관에 수입 수속용으로 제공할 뿐 아니라 화물선별용으로도 중요한 서류</h3> 
+
+					<h1>양화수속</h1>
+
+					<h3>선측도 - 본선선측에서 직접 수화인 또는 그 대리인에게 화물을 인도하는 방법(운송인의 책임은 선측에서 끝남)</h3>
+					<h4>부선도 - 부선에 인도하는 것</h4>
+					<h4>갑판도 (on deck delivery) : 갑판에 적재한 야채, 선어 등은 부패의 염려가 있으므로 하도를 신속하게 하기 위해 갑판상에서 인도하고 수화인의 부담으로 선외로 반출</h4>
+					<h4>창내도 (on board delivery) : 수화인은 자기부담으로 창내에서 화물을 인수하여 양화하는 것</h4>
+					<h4>부두도 (ex-quay delivery) : 화물을 부두에 양화하고 검수를 하여 인도하는 것</h4>
+
+					<h3>창고도 - (개품수송에 있어 수화인이 다르고 여러가지 화물이 적재되어 있어 일일이 인도하는 일이 번잡) 당해항에서 전 화물을 양화하여 일단 창고에 입고시키고 하도하는 방법</h3>
+
+					<hr>
+					<h3>양하관계 서류의 흐름</h3>
+					<ol>
+						<li>수화주는 선사 또는 대리점에 선하증권(B/L) 또는 화물선취보증장 (letter ofuarantee)을 제출하고 화물인도지시서(D/O)를 받음</li>
+						<li>수화주는 본선 또는 창고에 화물인도지시서를 제출하고 화물을 인수</li>
+						<li>화물인도지시서에 의해 본선으로부터 화물을 양륙하면 boat note를 작성</li>
+						<li>보세구역에 양륙화된 화물은 세관에 수입신고서(importdeclaration)를 제출하여 통관 후 관세를 납부하고 수입허가서(import permit)를 받음</li>
+						<li>양화가 종료하면 본선측에서는 필요한 검사, 즉 Hatch검사보고서, 손상화물 검사보고서를 받음</li>
+						<li>본선에서 필요하면 해난보고서, 양화사고보고서를 작성하고 선사 또는 대리점에 검사보고서오 함께 보냄</li>
+						<li>선사 또는 대리점은 과부족 화물을 발견하면 화물과부족조사서(tracer)를 작성하여 양륙지에 보내 조사를 의뢰</li>
+						<li>조사 의뢰된 양륙지에서는 그 회답으로서 양륙 재조사 보고서를 선사 또는 대리점에 보냄</li>
+					</ol>
+					<hr>
+					<h1>하역관계서류</h1>
+
+					<h3>선적관계서류</h3>
+					<h5>S/O : Shipping Order - 선적지시서</h5>
+					<ol>
+						<li>출화신고서 - 특정서식 없음</li><br>
+						<li>적화예약목록 - 선사측에서 작성하여 본선과 하역업자에게 통지하고 본선에서는 이에 따라 적화계획 작성. 리스트의 내용은 가변적인 집화의 상황에따라 변함</li><br>
+						<li>용적중량증명서 (certificate or list measurement) - 공인 검수.검량인에게 의뢰하여 선적시에 입회하여 발행하며, 운임 등의 계산자료가 됨 일명 surveyor's report라고도 함</li><br>
+						<li>수출신고서 (export declaration)및 수출허가서 (export permit) - 세관에 리스트를 제출하여 수출허가를 얻게 되며, 수출허가서는 수출면장으로서 절차는 자가신고나 또는 통관사에게 대행시키기도 함</li><br>
+						<li>선적지시서 - 화주의 선적신청서에 따라서 선사가 현품을 확인한 다음, 수송할 선박의 선적책임자<small>(일등항해사)</small> 앞으로 발행되는 화물적재지시서</li><br>
+						<li>tally sheet - 하역 중의 화물을 검수하면서 화물의 개수, 화인, 화태, 적부장소, 화물사고 적요 등을 기재하며, 본선측의 요청에 따라 tally man이 작성</li><br>
+						<li>본선수취증 - tally man이 tally sheet를 작성하여 송화인 또는 하역업자에게 교부하면 일등항해사가 선정을대리하여 S/O와 대조하고 발행하는 것</li><br>
+						<li>선적사고보고서 - 선적화물이 본선측에 수소될 때 손상이나 수량 부족 등 화물사고가 있을 때 M/R 의 사고적요란에 기록된 내용을 집계하여 tally man이 작성, 본선측에 인도하는 서류</li><br>
+						<li>하역업자 화물손해인정통지서 - 하역업자가 화물취급 중 입힌 손상에 대해 이를 인정하는 통지서로서 나중에 책임을 부담</li><br>
+						<li>하역업자 선체설비손해인정통지서 - 하역업자가 과실로 선체나 설비에 입힌 손실을 인정하는 통지서</li><br>
+						<li>무손상증명서 - 선내에서 하역작업원에 의한 화물손상시는 본선이 책임지는 경우가 많은데 특히 외국에서는 본선에 대한 손해배상청구에 대비하여 출항전에 하역업자측에 확인시켜 해당사고 외는 본선의 책임이 없음을 증명하는 서류</li><br>
+						<li>창고수취증 - 창고회사가 기탁계약에 따라 기탁화물을 수취했을 때, 기탁자에게 교부하는수취서</li><br>
+						<li>선하증권 (B/L) - 화물을 선적했다는 것 또는 선적을 위해 인수했다는 것을 나타내는 서류</li><br>
+						<li>해상보험증권 - 해상보험 계약의 요건, 약관, 조건 등을 기재해서 보험계약을 구체화시킨 상용문서</li><br>
+						<li>적화목록 (M/F) - 화물의 선적완료 후 B/L copy를 기초로 하여 본선  또는 선적지 점소 또는 대리점에서 이 M/F를 여러 통 작성하는 것 
+							<ul>
+								<li>서두 : 선명(name of vessel), 선적지 및 출항일(port of loading and date of sailing), 항차수, 선장명, 양지(port of destination) 이하 다음의 란을 기입</li>
+								<li>선하증권 번호(numbers of B/L)</li>
+								<li>화인(marks of packages)</li>
+								<li>곤포 수 및 내용(numbers of package and contents)</li>
+								<li>컨테이너 번호</li>
+								<li>송화인 및 수화인(name of shippers and consingnees)</li>
+								<li>착화통지서(notify address)</li>
+								<li>중량(weight)</li>
+								<li>입방용적(cubic measurement)</li>
+								<li>단위당 운임(rate of freight per unit)</li>
+								<li>운임총액(total freight)</li>
+								<li>할루금(rebate)</li>
+								<li>순운임(new freight)</li>
+							</ul>
+						우리나라에서는 보통 M/F에 운임관계 항목을 기재하지 않는 것을 manifest라 하고, 기재되어 있는 것을 freight list라고 함</li>	<br>
+						<li>위험화물적화일람표(dangerous cargo list) - 위험화물 적재시 각국의 적재규칙에 따라 위험화물의 일람표를 작성</li><br>
+						<li>중량화물일람표(heavy cargo list) - 선적화물 가운데 일반화물의 3L/T을 초과하는 중량화물에 대해서는 적부장소, 종류, 수량, 중량 등을 기재한 일람표를 작성</li><br>
+						<li>컨테이너화물 일람표(container or van cargo list) - 재래정기화물선에 컨테이너를 적재할 때 적부장소, 종류, van의 번호, 양지, 중량 등을 기재한 일람표를 작성</li><br>
+						<li>냉동화물일람표 및 적부도(reefer cargo list and stowage plan) - 냉동화물에 대한 내용, 수량, 중량 등을 기재한 서류로서 이때는 냉동창 내의 적부도를 동시에 작성해야함</li><br>
+						<li>귀중화물수령서 (valuable cargo receipt) - 귀중화물을 일반화물과 구별하기 위해 작성하는 것으로 양지의 하역업자가 수취하는 증명서</li><br>
+						<li>자동차체크보고서 (automobile check report) - 자동차 선적시 손상 여부를 검사하여 보고하는 서류</li><br>
+						<li>창구별 화물명세서 (hatch list) - 각 창구마다 그곳에 적재한 화물의 종류. 수량을 기재한 일람표 (선적지시서나 검수일람표 [tally list]를 기초로 하여 작성되;며, 양륙하역의 계획이나 stowage plan, tally sheet의 창구번호 확인 등에 사용)</li><br>
+						<li>적부도/적화도 - 본선에 적재하기 위하여 본선에서 작성되는 적부설계도</li><br>
+						<li>매일하역보고서 - 매일의 하역작업에 종사하는 작업반(gang) 수나 노동시간을 기록하여 작성하는 보고서 (하역업자에 대한 하역요금 지불의 기준)</li><br>
+						<li>적부감정보고서 (stowage survey report) - 특별한 화물을 적재하였을 경우, 감정인으로부터 그것이 완전하게 적재되었음을 입증시킨 보고서</li><br>
+						<li>space report - 선적완료 후 각 선창의 나머지 용적을 실측하여 산출 작성된 보고서 (선사와 대리점에 보고함으로써 집화 등에 참고하는 서류)</li><br>
+					</ol>
+
+					<hr>
+					<h1>양화관계서류</h1>
+					<ol>
+						<li>수입신고서 (import declaration) 및 수입허가서 (import permit)</li><br>
+						<li>화도지시서 (D/O: delivery order) - 화도시에 B/L과 교환으로 화물인도서류를 발급하는 것이 원칙이므로 선사는 수화인으로부터 B/L 또는 보증장(L/I)을 제출케 하고 선사가 작성하여 본선에 대해 화물인도를 지시하는 서류</li><br>
+						<li>화물부송장 (B/N : boat note) - 수입지에 입항한 본선을 임검하는 세관원이 본선의 적화목록과 대조항려 발행하는 화물의 명세를 증명하는 서류</li><br>
+						<li>양화사고조회서 (tracer) - 양륙 시에 부족화물이나 과잉화물을 발견한 경우, 선사나 대리점이 작성하여 각 기항지의 양화를 조사하고, 발견되면 추송하도록 요구하는 서류</li><br>
+						<li>양륙재조사보고서 - tracer를 받고 조사한 각 기항지에 있는 대리점이 조사회답서로서 작성하는 서류</li><br>
+						<li>양화사고보고서 (report on exception to cargo discharged) - 양화하는 화물의 과부족 또는 손상에 대해 보고하는 서류</li><br>
+						<li>선하증권</li><br>
+						<li>화물수취보증장 (L/G : letter of guarantee) - 선하증권보다 화물이 먼저 도착했을 경우 선사에 제시해야하는 보증장으로서 화도가 가능하도록 관행이 되어 있음 (은행에 의뢰하여 발행하고 선사에 제출)</li><br>
+						<li>창구검사 (hatch survey report) : 항해중 황천으로 인해 적화에 손상이 예상될 때 창구의 폐쇄상태나 화물의 적부를 점검하고 검사한 보고서</li><br>
+						<li>화물손해감정서 (damage survey report) - 화물손상시에 surveyor에게 감정을 의뢰하여 작성되는 보고서</li><br>
+						<li>해난보고서 (master's report) - 본선이 항해 도중 심한 풍우 기타 해상위험에 조우하여 선체 및 적화에 손해를 입었거나 또는 손상이 생겼을 우려가 있을 때 선장은 해난보고서를 작성하여 최초 입항항에 입항하는 즉시 이를 당해 항무관청에 제출, 항해일지의 검열을 받고, 그 사실에 대하여 증명을 받아둠 (captain's protest , sea protest)</li><br>
+						<li>양화사고보고서 (damaged cargo list) - 사고화물의 내용과 하역상황 등을 기재한 보고서(공정성을 띠기 위해 화물손해감정서를 동시에 작성해야 함)</li>
+					</ol>
+					<br><hr>
+					<h1>컨테이너 하역</h1>
+					<h3>수출 컨테이너 선적절차</h3>
+					<ol>
+					<li>선적예약 - 컨테이너 화물을 선적하고자 하는 화주는 선사에 선적요청서를 제출하기 전에 선적예약을 함<br>선사는 이를 기초로 영업 부서별, 모선별 booking note를 작성하여 선적계획을 세우고, 이 자료를 운송회사에 보내 운송계획을 세울 수 있도록 함<br>화주는 선적할 컨테이너 화물에 대한 상세한 사항이 입수되면 선적요청서를 선사에 보내 선적예약을 확정함</li><br>
+					<li>터미널 반입 - 터미널에 반입되는 컨테이너 화물은 터미널에 반입된 시간, 컨테이너 상태, 정보등이 전산입력되며, 터미널 yard계의 장치계획에 따라 지정된 장소에 장치<br>반입은 ODCY를 거치지 않는 직반입의 경우와 ODCY에 일시 장치되었다가 모선의 출항계획에 따라 반입되는 경우로 나뉘어 질 수 있음</li><br>
+					<li>선적계획 및 선적 - 컨테이너전용 터미널의 반입을 전후하여 선사는 bay plan을 터미널의 planner실에 송부하여, planner가 선박의 안전항해 및 컨테이너 조작을 최소화하기 위한 선적계획을 수립하도록 함<br>터미널은 컨테이너 선적목록을 선사로부터 받아 반입 컨테이너 목록과 비교하여 최종적인 모선별 컨테이너 반입 여부를 확인 <br>터미널은 컨테이너 선적목록 및 작업계획서에 의거하여 작업이 이루어진 후 최종적인 선적정보를 담은 bay plan을 선사로 송부하고 선사는 이를 그 모선이 기항하게 될 다음 항구로 보냄</li>
+					</ol>
+					<h3>수입 컨테이너 양화절차</h3>
+
+					<ol>
+						<li>선적서류 접수 - 해외에 위치한 선사의 지점이나 대리점으로부터 적화목록, bay plan등의 선적정보를 입수한 선사는 화물양화, 창고배정, 내륙운송 등과 관련한 일련의 계획을 수립<br>선사는 화주에게 화물도착 통지를 하고 터미널에는 bay plan을 송부하고 세관에는 적화목록을 보냄</li><br>
+						<li>수송계획 수립 - 적화목록을 보내고 난 다음 선사는 창고배정에 관한 사항이 담긴 배정적화목록을 세관에 제출하고 이 배정적화목록을 운송회사, ODCY, 터미널 등에 보내 수입화물의 운송, 반입, 양화 작업 등을 준비<br>화주가 보세운송을 원하는 경우에는 화주나 화주로부터 위임을 받은 운송회사가 보세운송을 신고</li><br>
+						<li>양화 - 선사로부터 선적정보를 입수한 터미널은 planner의 작업계획에 따라 컨테이너를 양화<br>이때 부두직통관, 직보세운송 컨테이너 화물, 터미널 CFS 배정화물을 제외하고는 ODCY로 일단 반입시키는 것이 현재 상황</li><br>
+					</ol>
+					<br>
+					<h3>컨테이너 관계 서류</h3>
+					<ol>
+						<li>화물선적예약서(booking note) - 선주가 화주로부터 구두나 문서로 예약을 접수하여 화물의 명세, 필요한 컨테이너 수, 수송조건 등을 기입한 서류로서 화물선적 예약목록이나 컨테이너 수배의 자료로 사용</li><br>
+						<li>화물선적예약목록 - 화물선적예약서의 여러 자료를 컴퓨터에 입력하여 집계 - 정리한 일람표로서 화물수취지시서의 역할을 하게 됨<br>CY 및 CFS operator는 화물선적예약목록을 조회하여 화주가 반입하는 화물을 수령</li><br>
+						<li>기기수도증 (E/R : equipment receipt) - 컨테이너.샤시 등의 기기류가 CY에서 반출되거나 반입될 때 기기류의 수도를 증명하는 서류 (CY operator가 작성)</li><br>
+						<li>컨테이너 내 적치표(CLP : container load plan) - 컨테이너 내에 적치된 화물의 명세 및 적치를 표시하는 화물적입서류(각 컨테이너 별로 화물을 적입하는 사람이 작성)<br>
+							CLP 용도
+							<ol>
+								<li>적지의 세관에 재출하는 화물반입계의 대용</li><br>
+								<li>CY와 CFS간의 화물의 수도증명서</li><br>
+								<li>양지에서 컨테이너로부터 화물을 인출할 때</li><br>
+								<li>본선 비치용 화물적부 서류</li><br>
+								<li>컴퓨터의 입력자료로서 필요</li>
+							</ol></li>
+							<li>부두수취증 (D/R : dock receipt) : 선사가 화물의 수취증으로 발행하는 서류(화주, 대리인이 선사의 규정양식을 사용하여 작성/ 화물 반입시에 CY 및CFS에 제출)</li><br>
+							<li>컨테이너 선하증권 (container bill of lading: received B/L) - D/R과 교환하여 발행할 때 선적선하증권(shipped B/L)이 아닌 수취선하증권(received B/L)으로 발행</li>
+					</ol>
+					<hr>
+					<h1>컨테이너 하역관리</h1>
+					<h3>반출입 관리</h3>
+					<ol>
+						<li>게이트 : 내륙운송과 항만물류처리의 분기점으로 내륙운송업자와 컨테이너 터미널이 상호 컨테이너에 대한 관리책임을 전환하는 곳</li><br>
+						<li>EIR(equipment ineterchange receipt): 기기수도증 역할과 터미널 내 컨테이너를 장치할 위치와 운송차량의 진입방향을 표시하는 안내도를 겸하는 것이 운영상 효율적</li><br>
+						<li>반입처리 : 컨테이너가 반입될 때 컨테이너의 적화작업 계획에 필요한 정보와 터미널 내부에 필요한 정보가 입력되면 EIR이 발행되어 터미널 측과 운송인 사이에 컨테이너 인수도를 확인</li><br>
+						<li>반출처리 : 운송기사는 지정된 장치장에서 컨테이너를 상차하여 게이트로 회차시 게이트 요원은 컨테이너 점검 후 컴퓨터에 반출사항 입력</li><br>
+					</ol>
+					<h3>장치장 관리</h3>
+					<ol>
+						<li>장치장의 구획 - 컨테이너 보관이 실제로 이루어지는 실외 창고<br>
+						블록의 야적공간 표시는 컨테이너가 장치되는 위치에 따라 사각형의 평면을 표현하는 가로, 세로, 높이를 나타내는 X축,Y축,Z축의 공간좌표를 블록을 포함하여 bay-X-Y-Z형의 고유번지로 표시<br>T/C방식의 X : 주행방향 (컨테이너 길이), Y : 크레인 트롤리의 횡행방향 (컨테이너 축), Z : 트롤리에 부착된 스프레더의 종횡방향 (적재된 단적)</li><br>
+						<li>장치장의 물류 - 수출 컨테이너 반입작업, 수출 컨테이너 직화작업, 수입 컨테이너 양화작업, 수입 컨테이너 반출작업 및 구내 이적작업</li><br>
+					</ol>
+					<hr>
+					<h1>본선 하역관리</h1>
+					<h3>본선 작업 형태</h3>
+					<ul>
+						<li>LO/LO(lift on/ lift off) - 부두나 선박에 설치된 C/C를 이용하여 본선의 선창 내에 수직방향으로 20 또는 40피트의 셀 가이드(cell guide)에 적재하거나 갑판상에 적재할 때는 해치 커버에 결속<br>
+							하역 싸이클이 중요
+							<ol>
+								<li>횡행</li>
+								<li>권하</li>
+								<li>위치고정</li>
+								<li>컨테이너 고정(twist lock)</li>
+								<li>권하</li>
+								<li>횡행</li>
+								<li>권하</li>
+								<li>위치고정</li>
+								<li>컨테이너 고정해제(twist lock off)</li>
+								<li>스프레더</li>
+								<li>권상</li>
+								<li>횡행</li>
+							</ol></li>
+							<br>
+							<li>컨테이너선은 적화와 양화가 동시에 행해지는 것이 일반적</li>
+					</ul>
+					<hr>
+					<h1>세계 주요 항만</h1>
+					<h2>홍콩</h2>
+					<h3>개요</h3>
+					<ul>
+						<li>중국 및 인접 아시아 각국과 관련하여 급속도로 성장일로를 걷고 있는 경제지역인 아시아 환태평양의 중심과 Pearl river delta 지역 입구에 전략적으로 위치 : 중국으로의 관문으로 중계경로를 독점</li>
+						<li>구룡반도, 홍콩섬, 란타우섬으로 둘러 싸여 있는 내해와 같은 자연조건도 세계 1위의 컨테이너항만으로 자리매김할 수 있게된 주요 요인들 중의 하나</li>
+						<li>광동성이라는 광활한 배후지를 확보하고 화남지역의 물류거점기능을 수행하고 있으며, 취급하는 물량의 대부분은 중국남부의 것</li>
+						<li>중국남부의 해상무역활동의 요충지로서 활약</li>
+					</ul>
+					<br>
+					<h3>항만운영 현황</h3>
+					<ul>
+						<li>홍콩의 항만시설 : 구룡반도의 서측에 집중 (HIT, MTL, sea-land, HIT-COSCO)</li>
+						<li>물동량에 비해 시설이 부족하여 전체물동량의 1/3이 외항에서 바지작업에 의존</li>
+						<li>홍콩항 : 24선석, 길이 7694m, 수심 12-15.5m를 갖추고 있음</li>
+						<li>계획 : 선석당 400m, 수심 17m</li>
+					</ul>
+					<br>
+					<h3>배후지 운영</h3>
+					<ol>
+						<li>철저한 자유방임적 경제체제로 민간경제활동에 대한 해정당국 개입 최소화</li>
+						<li>자원이 빈약하고 시장이 협소해 무역의존적 성장구조</li>
+						<li>3차 산업에 대한 높은 비중</li>
+						<li>외국자본의 적극적 유치 및 아시아 금융센터역할</li>
+					</ol>
+					<br>
+					<h3>주요산업 단지(tai po지구, yuen long지구, tseung kwan o지구)의 선호하는 입주대상기업의 사업</h3>
+					<ol>
+						<li>신상품, 기술혁신이나 서비스</li>
+						<li>고부가가치 상품, 홍콩의 원재료 및 인력 사용가능 사업</li>
+						<li>국내산업의 수요창출이 가능한 상품,서비스</li>
+						<li>홍콩 수출에 상당한 기여가 가능한 상품과 서비스</li>
+					</ol>
+					<hr>
+					<h2>싱가포르</h2>
+					<h3>개요</h3>
+					<ul>
+						<li>4개의 컨테이너터미널과 3개의 일반터미널이 있으며, 34개 컨테이너 선석을 갖추고 있음</li>
+						<li>전 세계  컨테이너 처리물량 기준 세계 2위 항만</li>
+						<li>세계 최고의 급유항, 세계 3번째의 급유센터 (세계 주요 급유회사 : shell, esso,british petroleum, mobil)</li>
+						<li>항로의 전략적인 위치, 우수한 시설</li>
+					</ul>
+					<br>
+					<h3>성장요인</h3>
+					<ol>
+						<li>지정학적 위치 (인도네시아 군도, 인도, 인도차이나, 대만등으로부터 접근이 용이하고 인도와 중국간 천연적인 항로에 위치하여 연료공급항으로서 최적의 조건을 가짐)</li>
+						<li>자유항(아편, 알코올, 담배, 원유 등에만 세금이 부과되고 등대세 등이 없음)</li>
+						<li>무역의 완벽한 자유 속에 상인의 이익을 허용하는 정부의 상업주의 정책의 결과</li>
+					</ol>
+					<br>
+					<h3>항만운영 현황</h3>
+					<h5>PSA : 정부조직인 PSA를 민영화하여 설립된 조직으로 모든 종류의 선박(컨테이너선, 벌크운반선, 화물운반선, 내항선, 부선, 여객선 등)을 수용할 수 잇는 4개의 터미널을 운영</h5>
+					<ol>
+						<li>PSA가 일원적으로 행함</li>
+						<li>환적화물 위주로 운영되는 항만의 특성을 고려하여 야드 내에서 컨테이너 취급 효율성의 제고를 위해서 다음의 운영방식을 채택하고 있음</li>
+						<ol>
+							<li>본선에서 양하되는 컨테이너를 야드 내 장치장으로 이송하는데 세계최초로 2단 적재 트레일러를 도입</li>
+							<li>야드 내 크레인으 회전율을 극대화하기 위해 수출입 컨테이너 1개당 트랜스퍼 크레인 타임(TT : transfer crane time)을 설정하여 반입/반출 시간을 컴퓨터시스템(portnet)으로 지정</li>
+							<li>게이트에 자동응답장치를 설치하여 완전 무서류의 게이트 통과를 가능케 하여 컨테이너 1개당 처리시간을 대폭 단축</li>
+						</ol>
+					</ol>
+					<br>
+					<h4>싱가포르항의 특징: 완벽한 EDI 시스템(항만에 관련된 모든 업무는 전자데이터시스템을 통하여 처리, 일반문서로 수소절차 등을 할 경우 벌금 부과)<br>
+					선박 스케줄등을 입력하면 접안할 선석과 하역예정 시간 등이 극히 짧은 시간에 결정되도록 되어있음</h4>
+					<hr>
+					<h2>고베</h2>
+					<h3>개요</h3>
+					<ul>
+						<li>일본에서 가장 규모가 큰 컨테이너항만(장치능력 : 74,000TEU)</li>
+						<li>32개의선석 보유</li>
+						<li>일본항만 중 가장 깊은 수심을 가지고 있음</li>
+						<li>소규모 항만들의 환적컨테이너 물동량을 유치하기위해 피더선에 대하여는 제세공과금과 접안료를 인하하는 조치를 취함</li>
+						<li>새로운 EDI시스템하에 창고를 포함한 항만입출항서류가 인터넷 웹사이트와 e-mail, 팩스문자를 데이터로 자동전환시키는 팩스-OCR을 통해 항만 관련 서류처리 업무의 효율성을 향상하는 등 복구를 위해 최선을 다하고 있음</li>
+					</ul>
+					<hr>
+					<h2>도쿄</h2>
+					<h3>개요</h3>
+					<ul>
+						<li>선석 수: 14개, 선석길이 4,016m, 수심: 10 ~ 15m를 확보</li>
+						<li>대형항만을 집중 육성하기 위한 슈퍼 중추항만 육성프로그램 추진</li>
+						<li>기존 항만관리운영제도의 통합 및 개혁, 물류시스템 등의 개선을 통하여 항만의 효율성 강화를 추구하고자 노력</li>
+					</ul>
+					<hr>
+					<h2>상해</h2>
+					<h3>개요</h3>
+					<ul>
+						<li>양쯔강유역(6300km)의 수상교통과 철도에 의한 일관수송을 통하여 성장한 중국최대의 상업 및 무역항</li>
+						<li>선석 22개, 안벽길이 6km 보유, 처리실적 기준 세계 3위</li>
+					</ul>
+					<br>
+					<h3>항만운영현황</h3>
+					장화빈,군공로,산 의 각 컨테이너 터미널은 홍콩의 hutchison whampoa Ltd.의 산하 기업인 hotchison port holdings Ltd(HPH)와 <br>상해항무국의 하부조직인 상해항집장상조합발전공사와 합병기업 상해항집장상마두유한공사에 의하여 관리 운영<br>
+					<hr>
+					<h2>심천</h2>
+					<h3>개요</h3>
+					<ul>
+						<li>3개의 터미널에 15개 선석, 선석길이 : 4270m, 수심 : 12.5 ~ 15m, C/C 31대를 보유</li>
+						<li>9000TEU급 초대형선이 출입할 수 잇는 대형부두</li>
+						<li>8000TEU급 초대형 컨테이너선의 기항에 대비하여 컨테이너 하역생산성을 시간당 35개 이상으로 증진</li>
+					</ul>
+
+					<hr>
+					<h2>로테르담</h2>
+					<h3>개요</h3>
+					<ul>
+						<li>유럽 주요시장의 중심부에 위치, 반경 480km 내에 독일, 프랑스, 덴마크 등 EU주요국이 자리하고 있음</li>
+						<li>유럽 각지로의 국가간 화물이동은 상당히 편리한 체제로 구축(철도망, 내륙수로망 도로망이 거미줄처럼 얽혀있을 뿐 아니라 운송체계도 단일국가와 같이 통일된 체계를 갖춤)</li>
+						<li>우수한 육로, 철도 및 항공편이 있기 때문에 시장까지 가는 시간을 단축하기 위하여 노력하는 기업들에게 상당한 편익을 제공</li>
+						<li>유럽드오 들어오는 모든 해항 화물의 37%가 로테르담과 암스테르담 항을 경유</li>
+						<li>일반화물, 컨테이너, 화학제품 및 기타 온도조절 제품 등이 모두 로테르담항에서 적재 출하되어 육로를 통해 유럽 전역으로 운송</li>
+						<li>철도운송은 유럽 내 모든 주요 산업단지로 다양한 상품을 신속하게 운송</li>
+						<li>선석수 : 18개, 선석길이 : 11790n, 수심: 6 ~ 16.6m</li>
+						<li>유럽 제일의 컨테이너 허브항으로서의 위상 및 비 아시아지역으로는 최고인 7위를 차지</li>
+					</ul>
+					<br>
+					<h3>항만운영현황</h3>
+					<ol>
+						<li>항만관리조직 - 로테르담사가 관리하는 시영항만(municipal port)<br>로테드담항을 관리하는 로테르담항만청(RMPM)은 시위원회의 통제를 받으며 독립체산제의  회계를 통해 독자적으로 운영<br>항만정책은 로테르담시집행위원에서 결정</li>
+						<li>부두운영방식 - land-lord(임대-관리) 형태를 취하고 잇으며, 항만시설은 임대계약에 의해 민간이 독자적으로 일괄 운영<br>항만부지 - 모두 시 소유로서 부두운영회사에 의해 임대 운영되며 인프라는 시정부가 투자하고 부두운영회사는 항만하부시설을 설치/운영</li>
+						<li>부두이용방식과 터미널 운영주체 - 터미널 운영회사와 사용계약을 체결함으로써 이루어짐( 운영주체 : ECT, uniport,hanno)</li>
+					</ol>
+					<hr>
+					<h2>함부르크</h2>
+					<h3>개요</h3>
+					<ul>
+						<li>선석 수 : 30개, 선석길이 : 8223m, 수심: 9.4 ~ 16.7m, C/C 64대를 갖춤</li>
+						<li>조직화된  항만의 연계수송 및 정보체계, 전 세계로 연결되는 완벽한 해운 서비스망, 다양하고 체계적인 배후연계 수송체계, 충실한 각종 지원업무기능, 첨단시설을 갖춘 다양한 화물별 부두시설 등을 내세움</li>
+						<li>주요하역 장비 : 200여 기의 컨테이너크레인(C/C) 및 그래브크레인, 30여 기의 곡물 및 사료용 사이펀 하역시설 등을 갖추고 있음</li>
+						<li>북대서양 연안으로부터 100km에 이르는 엘베강 안쪽에 위치하고 있으며 25만톤(DWT)급 대형벌크선과 6000TEU급 초대형 컨테이너선의 입/출항이 가능한 천혜의 조건을 갖추고 있음</li>
+						<li>완벽한 레이더유도장치 및 항로표지시설과 예선 및 도선체계는 24시간 최적상태로 유지</li>
+					</ul>
+					<br>
+					<h3>항만운영 현황</h3>
+					<ul>
+						<li>함부르크주가 관리하는 주 영향만으로 항만당국과 민간기능이 엄격하게 분리</li>
+						<li>항만당국 : 항만의 기본시설 관리, 배후부지 개발 , 제3섹터인 부두운영회사에게 임대</li>
+						<li>부두운영회사 : 임차부지를 물류용도로 사용, 보관시설, 하역장비 등은 부두운영회사가 투자하여 항만운송업체나 선박회사에게 제공</li>
+						<li>부두운영현황 : 부두운영회사와 하역업자의 역할이 엄격하게 구분
+							<ul>
+								<li>부두운영회사: 선내하역, 육상하역 및 창고하역을 통합하여 수행하는 사업자로 부두를 임대하여 운영</li>
+								<li>하역업자: 선내하역만 수행하는 사업자로 부두를 임대하지 않음</li>
+							</ul></li>
+					</ul>
+					<hr>
+					<h2>앤트워프항</h2>
+					<h3>개요</h3>
+					<ul>
+						<li>유럽의 대표적인 물류거점 항만</li>
+						<li>5개의 도크시설 구비</li>
+						<li>주요 취급화물: 철강, 금속 및 비금속화물 등 벌크화물과 자동차, 컨테이너 등</li>
+						<li>선석수 : 44개, 선석길이 : 10014m, 수심 : 12~15.5m 유럽 굴지의 컨테이너항만</li>
+					</ul>
+					<br>
+					<h3>항만운영 현황</h3>
+					<ul>
+						<li>장기적인 정책 : municipal port authority의 이사장이 주재하는 이사회에 의해 결정 (앤트워프시가 이사회의 대다수를 차지함)</li>
+						<li>포트 오스리티는 시의회와 시를 통제하는 상급기관의 동의 없이 거의 모든 결정을 내릴 수 있음</li>
+						<li>항만은 불필요한 지체를 없애고 계획을 완성할 수 있다는 의미</li>
+					</ul>
+					<hr>
+					<h3>뉴욕/뉴저지항 - 미국</h3>
+					<ul>
+						<li>뉴욕/뉴저지 양주에 걸친 하나의 항만으로서 포트오소리티에 의하여 일원적으로 관리/운영되고 있음</li>
+						<li>포트오소리티 관리/운영하는 항만지구는 자유이 여신상을 중심으로 한 반경 40lm 이내 1500평방 마일</li>
+						<li>뉴욕/뉴저지 포트오소리티의 특징
+							<ol>
+								<li>주의 경계선을 초월하여 창설</li>
+								<li>공기업이면서 민간기업의 경영방식을 채택 (공공기관이지만 양 주를 비롯해 어떠한 관계 지방자치 단체로부터도 세수입을 지원받을 수 없고, 징세자격도 부여받을 수 없음)</li>
+							</ol></li>
+						<li>선석: 42개, 길이 : 8569m, 수심 : 8.2 ~ 14m</li>
+					</ul>
+					<br>
+					<h3>항만운영 현황</h3>
+					어떠한 화물(컨테이너,자동차,액체,고체,벌크,건화물 등)에 대해서도 신속정확하게 대응하기 위하여 총 48기의 크레인을 갖추고 있음<br>
+					주요터미널 : 포트 뉴어크/엘리자베스 마린 터미널, 홀랜드 훅 마린 터미널, 레드 훅 컨테이너 터미널, 블루클린 마린 터미널 등이 있음<br>
+
+					<hr>
+					<h2>로스앤젤레스/롱비치항</h2>
+					<h3>개요</h3>
+					<ul>
+						<li>(LA 항)선석 : 32개, 길이 : 8116m, 수심 : 12 ~ 14.3m</li>
+						<li>(LB 항)선석 : 36개, 길이 : 7606m, 수심 : 11 ~ 15.5m</li>
+						<li>처리실적별 순위 : LA항 - 10위, LB항 - 11위</li>
+					</ul>
+					<hr>
+					<h2>펠릭스토우 - 영국</h2>
+					<h3>개요</h3>
+					<ul>
+						<li>영국의 동남부에 위치하고 있으며 영국 제1의 컨테이너항</li>
+						<li>초대형 컨테이너선의 기항에 적합한 항만시설(안벽 연장2.1Km, post panamax형 C/C 16기)을 갖추고 있음</li>
+						<li>피더서비스 네트워크는 포르투갈, 핀란드, 러시아, 발틱해, 북아프리카, 지중해, 중동, 흑해까지 광범위</li>
+						<li>항만서비스는 고성능 항만정보 시스템을 통하여 서류 없는 업무처리로 항만생산성을 향상</li>
+						<li>후방연꼐 운송망도 고속도로와 직결되어 전국으로 신속하게 운행할 수 있으며 철도운송은 2개의 철도화물기지에서 매일 14개 열차가 운행</li>
+						<li>처리실적: 세계 17위 항만</li>
+					</ul>
+					<br>
+					<h3>항만운영 현황</h3>
+					FDRC가 하나의 독립법인으로 유럽의 다른 항만들과 달리 터미널의 제반운영과 건설 등 모든 분야에 책임을 지고 있음<br>
+					FDRC는 항만경찰, 소방서, 구조팀 경비 등을 포함 (항만경찰은 항만구역을 포함하여 1마일 밖의 특정 지역까지 관장하는 권한을가짐)<br>
+					주요 컨테이너 터미널 : trinity 터미널 및 landguard 터미널<br>
+					컨테이너 터미널의 계류시설, 포장, 컨테이너 크레인 및 이동장비, 운영건물, 철도시설 등 터미널 건설과 구조변경 및 유지보수는 FDRC가 모두 책임 (자금 자체 조달)<br>
+					<hr>
+					<h2>르 아브르- 프랑스</h2>
+					<h3>개요</h3>
+					<ul>
+						<li>프랑스 서부의 노르망디지방에 위치하며 세느강 하구 우측에 위치하는 역사깊은 항구</li>
+						<li>영불해협과 접해 있어 영국과의 왕래도 편리</li>
+						<li>르아브라의 세느강 하구 퇴적지에 건설</li>
+						<li>증기선의 보급과 미국의 경제적 발전 등의 원인으로 상업항으로서의 지위를 구축</li>
+						<li>르 아브르 포트 오소리티가 운영주체로 책임/관리하고 있음 (활동범위 : 항만정비에 그치지 않고 배후지의 임해공업지대에 대한 기업유치도 맡아 항만을 중심으로 한 산업육성에도 심혈을 기울임)</li>
+						<li>대형 유조선에서 양하되는 원유를 원료로 생산하는 근대적인 정유소와 석유화학공업관련 기업이 다수 진출</li>
+						<li>자동차 산업(르노자동차 공단) 및 그와 관련된 공장도 그 배후지에 입지</li>
+					</ul>
+					<br>
+					<h3>항만운영 현황</h3>
+					북측 부두지역 : 아틀란틱 컨테이너 부두, 유럽/아틀란틱부두 및 유럽부두의 3개로 분산<br>
+					유럽부두는 프랑스와 1세 수문 내에 위치
+					<hr>
+					<h2>두바이</h2>
+					<h3>개요</h3>
+					<ul>
+						<li>선석: 12개, 수심 : 11.5 ~ 15m, C/C 28대를 갖춤</li>
+						<li>중국항만을 제외하고 20위권 항만 중에서 최고의 성장률을 기록</li>
+					</ul>
+					<hr>
+					<h2>부산항</h2>
+					<h3>개요</h3>
+					<ul>
+						<li>해상수출화물의 43%, 컨테이너 화물의 93%를 처리, 북항, 남항, 감천항 및 다대포항으로 구성</li>
+						<li>북항 : 일반부두, 양곡부두, 석탄 및 고철부두, 컨테이너부두 및 여객부두가 있음</li>
+						<li>컨테이너 전용부두 : 자성대, 신선대, 감만부두, 감천한지부두 (중소형 컨테이너선 전용부두: 우암부두)</li>
+					</ul>
+					<br>
+					<h3>자성대부두 </h3>
+					<p>
+						우리나라 최초의 컨테이너 전용부두<br>
+						부산컨테이너 부두운영공사(BCTOC)에서 운영하였다가 민영화로현대상선에 인수하여 현대부산컨테이너터미널(HBCT)이 됨<br>
+						HBCT는 첨단장비와 전산시스템을 갖추고 하루 24시간 연중무휴로 운영<br>
+					</p>
+					<br>
+					<h3>신선대부두</h3>
+					<p>
+						post-panamax급을 수용할 수있는 고속크레인을 비롯한 각종 첨단장비와 전산시스템을 갖춤<br>
+						신선대 컨테이너 터미널(PECT)이 운영<br>
+					</p>
+					<br>
+					<h3>감만부두</h3>
+					<p>
+						최첨단 장비를 갖춤<br>
+						한국의 대표적 선사 및 하역회사 한진해운, 현대상선 및 셋방, 대한통운에 의해 선석별로 운영<br>
+					</p>
+					<br>
+					<h3>우암부두</h3>
+					<p>
+						2만톤급 1척과 5천톤급 2척이 동시에 접안할 수있는 중소 컨테이너선 전용부두
+					</p>
+					<br>
+					<h3>감천한진부두</h3>
+					<p>
+						한진해운이 감천항에 매립 축조<br>
+						한진해운이 운영<br>
+					</p>
+					<br>
+					<h3>신항</h3>
+					<p>
+						동북아 국제물류 중심항만<br>
+						항만배후부지의 부족 및 도시기능의 문제점을 안고 있는 부산항의 만성적인 화물적체 해소 및 항만과 도시기능이 조화된 종합물류 및 정보거점항<br>
+						컨테이너부두 25개 선석을 건설하여 연간 460만teu를 처리하고 일반부두 38개 선석을 포함 부두길이 총 13km의 대형항만<br>
+						가덕신항 터미널은 로테르담, 델타, 시랜드 터미널과 같이 완전자동화 시스템을 구축하여 선박접압 대기율 1% 미만으로 하고,<br>
+						시간당 최소 100TEU 이상의 컨테이너를 처리할 뿐 아니라 종합정보시스템 및 복합운송망 구축으로 21세기 동북아 물류중심항으로 손색이 없음<br>
+						자성대 및 신선대 부두: 도크 시스템의 도입, 장치기간연장, 야간공휴할증 폐지, 하역료 인하 등 서비스 개선과 동남아 등의 마케팅 강화, 인력감축 등 경영 개선에 박차를 가함<br>
+						감만, 우암, 감천 및 과양항의 자가터미널을 운영하는 선사 및 하역업체들도 게이트 및 장비의 자동화, 첨단전산시스템을 구축하여 터미널 운영의 효율과를 기하면서 고객유치에 총력을 기울임<br>
+						마산항, 운산항도 도선료, 예선료 등 각종 항비의 할인, 하역료를 인하하면서 선사들을 유인<br>
+					</p>
+					<hr>
+					<h2>광양항</h2>
+					<h3>개요</h3>
+					<p>
+						동북아 컨테이너 환적항, 서남권의 대외무역 전진기지, 컨테이너 물동량 증가에 대비하여 부산항에 이은 제 2의 컨테이너 중심 항을 목표
+					</p>
+					<br>
+					<hr>
+						<h3>한국 항만 정책 변환과정</h3>
+						<b>1990년 이전 : 정부에 의해 관리<br>항만시설 부족, 해상 화물 급증</b>
+						<h4>제 1차 항만 기본 계획(1992~2001)</h4>
+							<small>2001년 목표 : 821만TEU<br>2001년 실적 : 999만TEU</small>
+						<ul>
+							<li>정부로부터 민영으로 운영체제를 넘김으로 효율성을 확대</li>
+						</ul>
+						<b>1999년 민간투자법 제정 - 민간에 의한 항만 개발 촉진<br>국제항만경쟁의 격화, 선박의 대형화, 항만민영화 등</b>
+						<br>
+						<h4>제 2차 항만 기본계획(2002~2011)</h4>
+						<small>2011년 목표 : 2967만TEU<br>2005년 실적 : 1522만TEU</small>
+						<ul>
+							<li>지리적 장소를 활용한 허브 항만</li>
+							<li>화물유통 중심으로부터 부가가치 창출의 항만</li>
+						</ul>
+						<b>2003년 : 항만공사법 제정<br>2004년 : 부산항 공사 설립<br>동북아시아의 치열한 경쟁, 양적성장에서 질적성장</b>
+						<br>
+						<h4>제 2차 항만 기본계획 수정계획(2006~2011)</h4>
+						<small>2011년 목표 : 2710만TEU<br>2011년 실적 : 2083만TEU</small>
+						<ul>
+							<li>항만을 통한 산업 클러스터화, 배후수송 확충</li>
+							<li>항만 수요 예측 변환 센터 운영, 화물량 연동항만 개발 시스템</li>
+						</ul>
+						<b>2006년 : 부산 신항만 최초 컨테이너 터미널 개업<br>동북아시아 허브항, 항만의 다기능화</b>
+						<br>
+						<h4>제 3차 항만 기본 계획(2011~2020)</h4>
+						<small>2020년 목표 : 3633만TEU<br>2015년 실적 : 2568만TEU</small>
+						<ul>
+							<li>전국 54개 항만의 개발계획을 담은 항만별 특화개발 전략</li>
+							<li>부산항 : 컨테이너 허브 | 광양항 : 복합 물류 | 울산항 : 석유 물류 등</li>
+							<b>주요항만의 국제경쟁력 확보, 항만배후지역의 특성 활용</b>
+						</ul>
+						<br>
+						<h4>제 3차 항만 기본계획 수정 계획(2016~2020)</h4>
+						<small>2020년 목표: 3101만 TEU</small>
+						<ul>
+							<li>AR이나 IoT가 적용되어진 스마트 항만을 추진(AI,5G,블록체인)</li>
+							<li>한국형 글로벌 터미널 작업자, 터미널의 완전 무인화, LNG벙커링 등 항만 운영 고도화</li>
+							<li>2026년까지 광양항에 항만자동화 테스트베드를 만들어 기술개발과 운영할 계획</li>
+						</ul>
+						<hr>
+					<h1>컨테이너 터미널 용어 정리</h1><a href="https://kosha.or.kr/kosha/data/guidanceB.do">출처 - 한국산업안전보건공단</a><br>
+
+					<h3>본선 작업: 항만 내에서 화물을 선박에 적하하거나 선박으로부터 양하하는 것</h3>
+					<br>
+					<h3>적하 (Loading): 부선 또는 부두 위의 컨테이너를 집어 선박에 적재하기까지의 작업</h3>
+					<br>
+					<h3>양하 (Discharging): 선박에 적재된 컨테이너를 부선 또는 부두위에 내려놓는 작업</h3>
+					<br>
+					<h3>컨테이너 크레인 (C/C): 부두안벽에 설치되어 적・양하 작업을 수행하는 컨테이너 전용 하역 크레인</h3>
+					<br>
+					<h3>스프레더 (Spreader): 컨테이너 크레인의 권상용 블럭(block)하부에 부착되어 컨테이너를 집어 올려 하역하는 설비</h3>
+					<br>
+					<h3>백 리치(Back reach): 컨테이너 크레인의 야드(Yard) 쪽 레일에서 야드 측으로 돌출한 붐의 하부를 포함한 작업구역</h3> 
+					<br>
+					<h3>랏싱 (Lashing): 컨테이너의 고정 및 고박을 위하여 턴 버클 등 하역용구를 이용하여 묶는 작업</h3>
+					<br>
+					<h3>랏싱 케이지(Lashing cage): 랏싱을 하기 위해 근로자가 탑승하여 컨테이너의 상단으로 이동하는 기구</h3>
+					<br>
+					<h3>랏싱 콘(Lashing cone): 컨테이너 사이를 연결하는 삼각뿔 형태의 고박용구</h3>
+					<br>
+					<h3>화물적부도(stowage plan): 컨테이너의 적재위치 및 적・양하 항구등을 표기한 하역상세도(stowage plan을 가지고 Marshaillng yard에 화물들을 미리 정렬)</h3>
+					<br>
+					<h3>셀 가이드(cell guide): 컨테이너 선박의 선창에 컨테이너를 적・양하하도록 구조적으로 설치한 구조물</h3>
+					<br>
+					<h3>플랫 랙 컨테이너(Flat rack container): 지붕, 측벽, 양단벽을 제거하고 4개의 기둥만 가진 컨테이너로 철재, 목재,파이프 등의 화물을 운송하기 위한 컨테이너</h3>
+					<br>
+					<h3>에이프런(Apron): 부두에서 화물(컨테이너)을 선박에 적하하거나 양하하는 안벽 상부</h3>
+					<br>
+					<h3>컨테이너 야드(container yard): 컨테이너를 선박에 적하하기위해 터미널내로 운반하여 보관하거나 또는 선박으로부터 양하한 컨테이너를 보관하는 장소로 써 주로 만재된 컨테이너를 취급하는 장소</h3>
+					<br>
+					<h3>화물집하장 (Container freight station CFS): 컨테이너 전용터미널 내에서 일반화물을 집화하여 창고에 보관한 후 , 컨테이너에 적출하는 장소</h3>
+					<br>
+					<h3>리치스태커(Reach Stacker): 중량 컨테이너를 전용으로 운반하거나 적재하기 위한 지게차의 일종으로 붐 끝단에 스프레더를 장착한 차량계하역운반기계</h3>
+					<br>
+					<h3>야드 트랙터(Yard Tractor Y/T): 컨테이너 전용터미널에서 샤시(Chassis)를 연결하여 컨테이너를 전문적으로 이동 및 운송하는데 사용하는 야드 전용차량</h3>
+					<br>
+					<h3>트렌스퍼 크레인(transer crane T/C): 컨테이너 야드에서 스프레더를 이용하여 컨테이너를 이송・적재하거나 차량에 상・하차를 하기 위하여 설치한 크레인</h3>
+					<br>
+					<h3>RO/RO선 : 차량에 컨테이너를 적재한 채 직접 선박의 홀드 내부로 이동하여 적하하거나 양하하는 선박</h3>
+					<br>
+					<h3>LO/LO : 컨테이너를 적재하기 위한 특수한 창내구조로 되어 적하나 양하 시에 크레인을 이용하는 수직하역방법을 사용(대부분의 컨테이너 전용선이 이 방식으로 하역작업을 수행)</h3>
+					<br>
+					<h3>Alliance : 전략적 제휴, 정기선사들이 선박공유협정을 체결해 구성한 연합체</h3>
+					<br>
+					<h3>Automated Lifting Vehicles (ALV) : 스스로 컨테이너를 집어 올리기도 하고 내려놓을 수 도 있는 크레인 기능을 보유한 자동이송장치</h3>
+					<br>
+					<h3>선하증권 (Bill of Landing) : 화주와 선박회사 간의 해상운송 계약에 의하여 선박회사가 발행하는 유가증권</h3>
+					<br>
+					<h3>선박적재 계획 (Stowage planning) : 선사가 컨테이너의 목적지, 중량 또는 유형과 같은 컨테이너 특성을 고려하여 선박 내 컨테이너 선적위치를 계획</h3>
+					<br>
+					<h3>적하목록 (Manifest M/F) : 선사나 운송주선인이 적하운임 명세목록 및 선하증권의 사본을 기초로 작성하는 화물명세서</h3>
+					<hr>
+					<br><br>
+					<hr>
+					<h1>터미널 일반 특성 비교</h1>
+					<table border="1" style="margin-left: 35%">
+						<tr style="text-align: center;">
+							<th>구분</th>
+							<th colspan="2" >특&nbsp;&nbsp;&nbsp;징</th>
+						</tr>
+						<tr>
+							<td rowspan="2"style="text-align: center;">자동화</td>
+							<td>장점</td>
+							<td>
+								<ul>
+									<li>효율적인 운영계획을 신속하게 터미널 전체에 반영할 수 있음</li>
+									<li>복잡하고 위험한 작업이라도 기계적으로 손쉽게 처리할 수 있음</li>
+									<li>작업의 안전성과 높은 정확도의 실현이 가능함</li>
+									<li>작업의 고속화가 가능하며, 인력의 의존도가 매우 적어 생산성의 정확한 측정이 가능함</li>
+									<li>항만의 가격 경쟁력 확보에 용이함</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>단점</td>
+							<td>
+								<ul>
+									<li>건설비용이 높으며, 유지보수비용의 산정이 어려움</li>
+									<li>운영상의 문제시 부분적인 장비교체가 힘들며, 추가비용이 높음</li>
+									<li>주기적이고 정확한 점검이 요구됨</li>
+									<li>재래식에 비해 운영 사례가 거의 없어 신뢰성 확보가 현재로선 미흡함</li>
+									<li>주변의 환경변화에 민감하여 정밀한 작업을 요함</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td rowspan="2" style="text-align: center;">반자동화</td>
+							<td>장점</td>
+							<td>
+								<ul>
+									<li>복잡하고 위험한 야드 작업의 수행을 쉽게 해결할 수 있음</li>
+									<li>야드 작업의 안전성과 정확성이 다소 높아짐(리핸들링 작업 가능)</li>
+									<li>야드 작업의 고속화가 가능하며, 생산성의 정확한 측정이 가능함</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>단점</td>
+							<td>
+								<ul>
+									<li>부분적 자동화이므로 투자대비 효율성이 떨어짐</li>
+									<li>안벽작업생산성을 높이는 측면에서는 다소 부족함</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td rowspan="2" style="text-align: center;">재래식</td>
+							<td>장점</td>
+							<td>
+								<ul>
+									<li>기존에 검증된 설계로 위험부담이 거의 없고 안정성이 매우 높음</li>
+									<li>숙련된 인력의 확보가 가능하며 운영노하우가 많이 공개되어 있음</li>
+									<li>작업물량의 변화에 따라 장비의 탄력적 운영이 가능함</li>
+									<li>초기투자비가 저렴하며, 산정이 용이함</li>
+									<li>장비 고장시 단이 교체가 가능하며 신속히 복구할 수 있음</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>단점</td>
+							<td>
+								<ul>
+									<li>인력에 의존하는 경향이 많아 노동쟁의시 대처방안이 곤란함</li>
+									<li>실제운영에 있어 관행적 성향이 많아 효율적 운영방안을 반영하는 데 어려움이 따름</li>
+									<li>작업환경변화에 따른 지속적인 교육이 요구됨</li>
+									<li>획기적인 작업생산성 향상을 기대하기 어려움</li>
+									<li>향후 항만 간 가격 경쟁력에서 열위 우려</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+</body>
+</html>
